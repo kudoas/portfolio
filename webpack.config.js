@@ -33,6 +33,10 @@ module.exports = {
           name: "[name].[ext]",
         },
       },
+      {
+        test: /\.css$/,
+        loaders: ["style-loader", "css-loader?modules"],
+      },
     ],
   },
   plugins: [

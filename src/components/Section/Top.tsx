@@ -6,29 +6,26 @@ import { Wave } from "../UI/Wave";
 export const Top: React.FCX = ({ className }) => {
   return (
     <section className={className}>
-      <div>
-        <h1>Daichi Kudo</h1>
-        <p>PORTFOLIO</p>
-      </div>
+      <h1>Daichi Kudo</h1>
+      <p>PORTFOLIO</p>
       <Wave />
     </section>
   );
 };
 
 export const StyledTop = styled(Top)`
-  div {
-    background: rgb(0, 153, 255);
-    padding-top: 20px;
-    color: white;
-    text-align: center;
-    height: 35vh;
-    h1 {
-      font-size: 64px;
-      margin-top: 100px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 20px;
-    }
+  background: #09f;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  h1 {
+    margin: 7rem 1.25rem 2.5rem 1.25rem;
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 0 1.25rem 5rem 1.25rem;
+  }
+  svg {
+    display: block;
   }
 `;
