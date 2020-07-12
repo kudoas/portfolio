@@ -2,7 +2,7 @@ import React from "react";
 import { StyledHeader } from "./components/Section/Header";
 import { StyledTop } from "./components/Section/Top";
 import { StyledAbout } from "./components/Section/About";
-import { Expreience } from "./components/Section/Experience";
+import { StyledExpreience } from "./components/Section/Experiences";
 import { Works } from "./components/Section/Works";
 import { Skills } from "./components/Section/Skills";
 import { Links } from "./components/Section/Links";
@@ -15,7 +15,7 @@ export const Main: React.FCX = ({ className }) => {
       <StyledHeader />
       <StyledTop />
       <StyledAbout />
-      <Expreience />
+      <StyledExpreience />
       <Works />
       <Skills />
       <Contact />
