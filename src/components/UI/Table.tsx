@@ -16,7 +16,7 @@ const returnAnchor = (arr: string[], rowKey: number, itemKey: number) => {
       </td>
     );
   }
-  return <td key={String(rowKey) + String(itemKey)}>{arr[0]}</td>;
+  return <td key={uniqueKey}>{arr[0]}</td>;
 };
 
 export const Table: React.FCX<Props> = (props) => {

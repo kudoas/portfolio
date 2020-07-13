@@ -1,36 +1,41 @@
-import React, { useState, Children } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 
-const Root = styled.h1`
-  font-size: 10remm;
-`;
-
 type Props = {
-  tag?: string;
+  tag: "h1" | "h2" | "h3";
 };
 
 export const Title: React.FCX<Props> = (props) => {
-  const { className, tag, children } = props;
+  const { tag, children } = props;
 
   let Component;
   switch (tag) {
+    case "h1":
+      Component = styled.h1`
+        font-size: 6.4rem;
+        letter-spacing: 0.2rem;
+      `;
+      break;
     case "h2":
-      Component = Root.withComponent("h2");
+      Component = styled.h2`
+        text-align: center;
+        margin: 20px 5%;
+        &::after {
+          display: block;
+          height: 2px;
+          content: "";
+          background: #09f;
+        }
+      `;
       break;
     case "h3":
-      Component = Root.withComponent("h3");
-      break;
+      Component = styled.h3``;
     default:
-      Component = Root;
+      Component = styled.h1`
+        font-size: 6.4rem;
+        letter-spacing: 0.2rem;
+      `;
   }
 
-  return (
-    <div className={className}>
-      <Component>{children}</Component>
-    </div>
-  );
+  return <Component>{children}</Component>;
 };
-
-export const StyledTitle = styled(Title)`
-  text-align: center;
-`;

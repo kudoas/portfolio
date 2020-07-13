@@ -18,16 +18,12 @@ export const GlobalCSS = () => (
             font-size: 5rem;
           }
           h2 {
-            display: inline-block;
-            margin: 20px 5%;
             font-size: 3.4rem;
-            text-align: center;
           }
-          h2::after {
-            display: block;
-            height: 2px;
-            content: "";
-            background: #09f;
+          h1,
+          h2,
+          h3 {
+            display: inline-block;
           }
           a {
             text-decoration: none;

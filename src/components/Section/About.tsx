@@ -2,19 +2,20 @@ import React from "react";
 import styled from "@emotion/styled";
 
 import { StyledTable } from "./../UI/Table";
+import { Title } from "./../UI/Title";
 
 export const About: React.FCX = ({ className }) => {
   const tableLists = [
     [["Name"], ["工藤 大地 (Daichi Kudo)"]],
-    [["University"], ["明治薬科大学 薬学部"]],
+    [["University"], ["明治薬科大学"]],
     [["GitHub"], ["Kudoas", "https://github.com/Kudoas"]],
     [["AtCoder"], ["kudoa", "https://atcoder.jp/users/kudoa"]],
     [["Hatena Blog"], ["kudoa", "https://kudoa.hatenablog.com/"]],
   ];
 
   return (
-    <section className={className}>
-      <h2>About</h2>
+    <section className={className + " " + "#about"}>
+      <Title tag="h2">About</Title>
       <div>
         <div className="icon">
           <img src="icon.png" />

@@ -3,7 +3,7 @@ import { StyledHeader } from "./components/Section/Header";
 import { StyledTop } from "./components/Section/Top";
 import { StyledAbout } from "./components/Section/About";
 import { StyledExpreience } from "./components/Section/Experiences";
-import { Works } from "./components/Section/Works";
+import { Works } from "./components/Section/Works/Works";
 import { Skills } from "./components/Section/Skills";
 import { Links } from "./components/Section/Links";
 import { Contact } from "./components/Section/Contact";

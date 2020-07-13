@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 
+import { Title } from "./../UI/Title";
 import { StyledTable } from "./../UI/Table";
 
 export const Expreience: React.FCX = ({ className }) => {
@@ -10,8 +11,8 @@ export const Expreience: React.FCX = ({ className }) => {
   ];
 
   return (
-    <section className={className}>
-      <h2>Experiences</h2>
+    <section className={className + " " + "#experiences"}>
+      <Title tag="h2">Experiences</Title>
       <div>
         <h3>インターン</h3>
         <StyledTable tableLists={tableLists} />

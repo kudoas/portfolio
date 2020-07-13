@@ -1,9 +1,11 @@
 import React from "react";
 
-export const Skills: React.FCX = () => {
+import { Title } from "./../UI/Title";
+
+export const Skills: React.FCX = ({ className }) => {
   return (
-    <section>
-      <h2>Skills</h2>
+    <section className={className + " " + "#skill"}>
+      <Title tag="h2">Skills</Title>
       <div>
         <h3>HTML</h3>
         <p>まあかけるし分かる</p>

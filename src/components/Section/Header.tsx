@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import styled from "@emotion/styled";
 
 export const Header: React.FCX = ({ className }) => {
@@ -6,13 +7,41 @@ export const Header: React.FCX = ({ className }) => {
     <header className={className}>
       <nav>
         <ul>
-          <li>Top</li>
-          <li>About</li>
-          <li>Works</li>
-          <li>Experineces</li>
-          <li>Skills</li>
-          <li>Contact</li>
-          <li>Links</li>
+          <li>
+            <Link to="#top" smooth={true} offset={-40}>
+              Top
+            </Link>
+          </li>
+          <li>
+            <Link to="#about" smooth={true} offset={-40}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="#works" smooth={true} offset={-40}>
+              Works
+            </Link>
+          </li>
+          <li>
+            <Link to="#experiences" smooth={true} offset={-40}>
+              Experineces
+            </Link>
+          </li>
+          <li>
+            <Link to="#skills" smooth={true} offset={-40}>
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link to="#contact" smooth={true} offset={-40}>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link to="#link" smooth={true} offset={-40}>
+              Links
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
@@ -23,7 +52,6 @@ export const StyledHeader = styled(Header)`
   position: sticky;
   top: 0;
   font-size: 18px;
-  padding: 10px;
   margin: 0;
   background-color: #fff;
   nav {
@@ -31,7 +59,31 @@ export const StyledHeader = styled(Header)`
       text-align: center;
       li {
         display: inline-block;
-        margin: 5px 30px;
+        padding: 0 30px;
+        a {
+          display: inline-block;
+          position: relative;
+          padding: 15px 0;
+          transition: 0.3s;
+          color: #333;
+          &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: #2a2a64;
+            transform: translateX(-50%);
+            transition: all 0.3s ease 0s;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
       }
     }
   }

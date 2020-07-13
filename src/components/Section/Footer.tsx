@@ -3,8 +3,10 @@ import styled from "@emotion/styled";
 
 export const Footer: React.FCX = ({ className }) => {
   return (
-    <footer className={className}>
-      <p>Copyright©2020. Daichi Kudo.</p>
+    <footer className={className + " " + "#footer"}>
+      <p>
+        Copyright©2020. Daichi Kudo. <a href="https://github.com/Kudoas/Portfolio">Source code</a>
+      </p>
     </footer>
   );
 };
