@@ -20,6 +20,9 @@ export const GlobalCSS = () => (
           h2 {
             font-size: 3.4rem;
           }
+          h3 {
+            font-size: 2.4rem;
+          }
           h1,
           h2,
           h3 {

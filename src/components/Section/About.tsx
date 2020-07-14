@@ -16,7 +16,7 @@ export const About: React.FCX = ({ className }) => {
   return (
     <section className={className + " " + "#about"}>
       <Title tag="h2">About</Title>
-      <div>
+      <div className="grid">
         <div className="icon">
           <img src="icon.png" />
         </div>
@@ -27,17 +27,17 @@ export const About: React.FCX = ({ className }) => {
 };
 
 export const StyledAbout = styled(About)`
-  div {
+  .grid {
     margin: 0 auto;
     font-size: 1.8rem;
     display: grid;
     grid-template-columns: 30% 70%;
     .icon {
       grid-column: 1;
+      margin: auto auto;
       img {
         width: 130px;
         height: 130px;
-        margin: auto auto;
         border-radius: 20px;
       }
     }

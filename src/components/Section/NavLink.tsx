@@ -14,7 +14,7 @@ export const NavLink: React.FCX<Props> = (props) => {
     <ul className={className}>
       {navList.map((link) => {
         <li>
-          <Link to={link} smooth={true} offset={offset} className={className}>
+          <Link to={link} smooth={true} offset={offset}>
             {children}
           </Link>
         </li>;

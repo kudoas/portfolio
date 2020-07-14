@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import { Title } from "./../UI/Title";
+import { StyledTitle } from "./../UI/Title";
 import { StyledTable } from "./../UI/Table";
 
 export const Expreience: React.FCX = ({ className }) => {
@@ -12,9 +12,9 @@ export const Expreience: React.FCX = ({ className }) => {
 
   return (
     <section className={className + " " + "#experiences"}>
-      <Title tag="h2">Experiences</Title>
-      <div>
-        <h3>インターン</h3>
+      <StyledTitle tag="h2">Experiences</StyledTitle>
+      <div className="intern">
+        <StyledTitle tag="h3">インターン</StyledTitle>
         <StyledTable tableLists={tableLists} />
       </div>
     </section>
@@ -22,5 +22,10 @@ export const Expreience: React.FCX = ({ className }) => {
 };
 
 export const StyledExpreience = styled(Expreience)`
-  margin: 0 auto;
+  .intern {
+    text-align: center;
+    table {
+      margin: 20px auto;
+    }
+  }
 `;

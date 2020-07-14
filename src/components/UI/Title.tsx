@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const Title: React.FCX<Props> = (props) => {
-  const { tag, children } = props;
+  const { tag, children, className } = props;
 
   let Component;
   switch (tag) {
@@ -30,12 +30,17 @@ export const Title: React.FCX<Props> = (props) => {
       break;
     case "h3":
       Component = styled.h3``;
-    default:
-      Component = styled.h1`
-        font-size: 6.4rem;
-        letter-spacing: 0.2rem;
-      `;
+      break;
   }
 
-  return <Component>{children}</Component>;
+  return (
+    <div className={className}>
+      <Component>{children}</Component>
+    </div>
+  );
 };
+
+export const StyledTitle = styled(Title)`
+  display: inline;
+  text-align: center;
+`;

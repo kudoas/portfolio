@@ -21,7 +21,7 @@ export const StyledTop = styled(Top)`
   text-align: center;
   overflow: hidden;
   h1 {
-    margin: 7rem 1.25rem 2.5rem 1.25rem;
+    margin: 12rem 1.25rem 2.5rem 1.25rem;
   }
   p {
     font-size: 3rem;

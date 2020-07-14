@@ -1,11 +1,14 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import styled from "@emotion/styled";
+
+import { NavLink } from "./NavLink";
 
 export const Header: React.FCX = ({ className }) => {
   return (
     <header className={className}>
       <nav>
+        {/* <NavLink navList={}/> */}
         <ul>
           <li>
             <Link to="#top" smooth={true} offset={-40}>
@@ -18,13 +21,13 @@ export const Header: React.FCX = ({ className }) => {
             </Link>
           </li>
           <li>
-            <Link to="#works" smooth={true} offset={-40}>
-              Works
+            <Link to="#experiences" smooth={true} offset={-40}>
+              Experineces
             </Link>
           </li>
           <li>
-            <Link to="#experiences" smooth={true} offset={-40}>
-              Experineces
+            <Link to="#works" smooth={true} offset={-40}>
+              Works
             </Link>
           </li>
           <li>
