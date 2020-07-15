@@ -35,10 +35,11 @@ export const Table: React.FCX<Props> = (props) => {
 
 export const StyledTable = styled(Table)`
   tbody {
+    font-size: 16px;
     tr {
       border-bottom: solid 1px #eee;
       td {
-        padding: 10px 10px;
+        padding: 5px 10px;
       }
     }
     tr:hover {
