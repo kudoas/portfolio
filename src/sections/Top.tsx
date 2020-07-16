@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import { Title } from "../UI/Title";
-import { Wave } from "../../styles/Wave";
+import { Title } from "../components/Title";
+import { Wave } from "../components/Wave";
 
 export const Top: React.FCX = ({ className }) => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import { StyledTable } from "./../UI/Table";
-import { Title } from "./../UI/Title";
+import { StyledTable } from "../components/Table";
+import { Title } from "../components/Title";
 
 export const About: React.FCX = ({ className }) => {
   const tableLists = [

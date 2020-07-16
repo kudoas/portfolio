@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import { Title } from "./../../UI/Title";
-import { StyledCard } from "./Card";
+import { Title } from "../components/Title";
+import { StyledCard } from "../components/Card";
 
 export const Works: React.FCX = ({ className }) => {
   return (

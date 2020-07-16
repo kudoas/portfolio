@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Title } from "./../UI/Title";
+import { Title } from "../components/Title";
 
 export const Links: React.FCX = () => {
   return (

@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { GlobalCSS, ResetCSS } from "./styles";
-import { Main } from "./Main";
+import { Main } from "./pages";
 
 // assets
-import "./assets/imgs/icon.png";
-import "./assets/imgs/works/blog.png";
-import "./assets/imgs/works/board.png";
-import "./assets/imgs/works/burger-builder.png";
-import "./assets/imgs/works/html-table-creator.png";
+import "./assets/icon.png";
+import "./assets/works/blog.png";
+import "./assets/works/board.png";
+import "./assets/works/burger-builder.png";
+import "./assets/works/html-table-creator.png";
 
 const App: React.FC = () => {
   return (

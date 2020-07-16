@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import { StyledTitle } from "../../UI/Title";
+import { StyledTitle } from "./Title";
 
 type Props = {
   title: string;
@@ -24,7 +24,7 @@ export const Card: React.FCX<Props> = (props) => {
 };
 
 export const StyledCard = styled(Card)`
-  width: 400px;
+  width: 300px;
   padding: 8px;
   h3 {
     margin: 10px;
