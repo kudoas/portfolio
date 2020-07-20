@@ -18,7 +18,7 @@ export const About: React.FCX = ({ className }) => {
       <Title tag="h2">About</Title>
       <div className="grid">
         <div className="icon">
-          <img src="icon.png" />
+          <img src="icon.png" alt="icon" />
         </div>
         <StyledTable tableLists={tableLists} />
       </div>

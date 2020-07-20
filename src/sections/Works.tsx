@@ -25,13 +25,19 @@ export const Works: React.FCX = ({ className }) => {
           title="掲示板"
           icon="board.png"
           detail="Django製の掲示板アプリ"
-          skills={"Django"}
+          skills={"Django, PostgresQL, S3"}
         />
         <StyledCard
           title="HTML Table Creator"
           icon="html-table-creator.png"
           detail="HTMLを作成するツール"
           skills={"React.js TypeScript ContextAPI"}
+        />
+        <StyledCard
+          title="積読管理用bot"
+          icon="slack-icon.png"
+          detail="週に一回登録した本を通知してくれるslack bot"
+          skills={"GAS, Webhook API, Spread Sheet"}
         />
       </div>
     </section>

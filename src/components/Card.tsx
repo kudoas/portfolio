@@ -32,6 +32,7 @@ export const StyledCard = styled(Card)`
   img {
     display: block;
     width: 100%;
+    border-radius: 3px;
   }
   p {
     margin: 10px;

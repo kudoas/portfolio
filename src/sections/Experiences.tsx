@@ -6,8 +6,8 @@ import { StyledTable } from "../components/Table";
 
 export const Expreience: React.FCX = ({ className }) => {
   const tableLists = [
-    [["2020/08"], ["Comming Soon"]],
-    [["2020/09"], ["Comming Soon"]],
+    [["2020/08"], ["VOYAGE GROUP Treasure"]],
+    [["2020/09"], ["Rakuten 夏の陣 2020"]],
   ];
 
   return (

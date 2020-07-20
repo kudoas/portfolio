@@ -10,6 +10,7 @@ import "./assets/works/blog.png";
 import "./assets/works/board.png";
 import "./assets/works/burger-builder.png";
 import "./assets/works/html-table-creator.png";
+import "./assets/works/slack-icon.png";
 
 const App: React.FC = () => {
   return (
