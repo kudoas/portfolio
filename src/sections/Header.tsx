@@ -8,40 +8,39 @@ export const Header: React.FCX = ({ className }) => {
   return (
     <header className={className}>
       <nav>
-        {/* <NavLink navList={}/> */}
         <ul>
           <li>
-            <Link to="#top" smooth={true} offset={-40}>
+            <Link to="#top" smooth={true} offset={-40} duration={500}>
               Top
             </Link>
           </li>
           <li>
-            <Link to="#about" smooth={true} offset={-40}>
+            <Link to="#about" smooth={true} offset={-40} duration={500}>
               About
             </Link>
           </li>
           <li>
-            <Link to="#experiences" smooth={true} offset={-40}>
+            <Link to="#experiences" smooth={true} offset={-40} duration={500}>
               Experineces
             </Link>
           </li>
           <li>
-            <Link to="#works" smooth={true} offset={-40}>
+            <Link to="#works" smooth={true} offset={-40} duration={500}>
               Works
             </Link>
           </li>
           <li>
-            <Link to="#skills" smooth={true} offset={-40}>
+            <Link to="#skills" smooth={true} offset={-40} duration={500}>
               Skills
             </Link>
           </li>
           <li>
-            <Link to="#contact" smooth={true} offset={-40}>
+            <Link to="#contact" smooth={true} offset={-40} duration={500}>
               Contact
             </Link>
           </li>
           <li>
-            <Link to="#link" smooth={true} offset={-40}>
+            <Link to="#link" smooth={true} offset={-40} duration={500}>
               Links
             </Link>
           </li>
@@ -53,6 +52,7 @@ export const Header: React.FCX = ({ className }) => {
 
 export const StyledHeader = styled(Header)`
   position: sticky;
+  z-index: 1;
   top: 0;
   font-size: 18px;
   margin: 0;

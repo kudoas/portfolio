@@ -1,40 +1,47 @@
 import React from "react";
-import styled from "@emotion/styled";
+import Card from "@material-ui/core/Card";
+import { makeStyles } from "@material-ui/core/styles";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Typography from "@material-ui/core/Typography";
 
-import { StyledTitle } from "./Title";
+const useStyles = makeStyles({
+  card: {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+  },
+  cardContent: {
+    flexGrow: 1,
+  },
+  media: {
+    paddingTop: "56.25%",
+  },
+});
 
 type Props = {
   title: string;
-  icon: string;
+  image: string;
   detail: string;
   skills: string;
 };
 
-export const Card: React.FCX<Props> = (props) => {
-  const { title, className, icon, detail, skills } = props;
+const CardItem: React.FCX<Props> = (props) => {
+  const { title, className, image, detail, skills } = props;
+  const classes = useStyles();
 
   return (
-    <div className={className}>
-      <StyledTitle tag="h3">{title}</StyledTitle>
-      <img src={icon} alt={title} />
-      <p>{detail}</p>
-      <p>{skills}</p>
-    </div>
+    <Card className={classes.card}>
+      <CardMedia className={classes.media} image={image} title={title} />
+      <CardContent className={classes.cardContent}>
+        <Typography component="h3" variant="h5">
+          {title}
+        </Typography>
+        <Typography component="p">{detail}</Typography>
+        <Typography component="p">{skills}</Typography>
+      </CardContent>
+    </Card>
   );
 };
 
-export const StyledCard = styled(Card)`
-  width: 300px;
-  padding: 8px;
-  h3 {
-    margin: 10px;
-  }
-  img {
-    display: block;
-    width: 100%;
-    border-radius: 3px;
-  }
-  p {
-    margin: 10px;
-  }
-`;
+export default CardItem;
