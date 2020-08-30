@@ -1,45 +1,70 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { makeStyles } from "@material-ui/core/styles";
+import Grid, { GridSpacing } from "@material-ui/core/Grid";
 
 import { Title } from "../components/Title";
-import { StyledCard } from "../components/Card";
+import Card from "../components/Card";
+import { blog, burgerBuilder, board, htmlTableCreator, slackIcon, slack } from "./../assets";
+
+const useStyles = makeStyles({
+  grid: {
+    textAlign: "center",
+  },
+});
 
 export const Works: React.FCX = ({ className }) => {
+  const classes = useStyles();
+  const cardItems = [
+    {
+      title: "個人メディア",
+      image: blog,
+      detail: "日々学習したことや知見を共有するためのブログ",
+      skills: "gatsby, google analytics",
+    },
+    {
+      title: "Burger Builder",
+      image: burgerBuilder,
+      detail: "(デモ)オーダーメイドのハンバーガーを注文できるアプリ",
+      skills: "React.js Redux",
+    },
+    {
+      title: "掲示板",
+      image: board,
+      detail: "Django製の掲示板アプリ",
+      skills: "Django, PostgresQL, S3",
+    },
+    {
+      title: "HTML Table Creator",
+      image: htmlTableCreator,
+      detail: "HTMLを作成するツール",
+      skills: "React.js TypeScript ContextAPI",
+    },
+    {
+      title: "積読管理用bot",
+      image: slack,
+      detail: "週に一回登録した本を通知してくれるslack bot",
+      skills: "GAS, Webhook API, Spread Sheet",
+    },
+  ];
+
   return (
-    <section className={className + " " + "#works"}>
+    <section className="#works">
       <Title tag="h2">Works</Title>
-      <div className="grid">
-        <StyledCard
-          title="個人メディア"
-          icon="blog.png"
-          detail="日々学習したことや知見を共有するためのブログ"
-          skills={"gatsby, google analytics"}
-        />
-        <StyledCard
-          title="Burger Builder"
-          icon="burger-builder.png"
-          detail="(デモ)オーダーメイドのハンバーガーを注文できるアプリ"
-          skills={"React.js Redux"}
-        />
-        <StyledCard
-          title="掲示板"
-          icon="board.png"
-          detail="Django製の掲示板アプリ"
-          skills={"Django, PostgresQL, S3"}
-        />
-        <StyledCard
-          title="HTML Table Creator"
-          icon="html-table-creator.png"
-          detail="HTMLを作成するツール"
-          skills={"React.js TypeScript ContextAPI"}
-        />
-        <StyledCard
-          title="積読管理用bot"
-          icon="slack-icon.png"
-          detail="週に一回登録した本を通知してくれるslack bot"
-          skills={"GAS, Webhook API, Spread Sheet"}
-        />
-      </div>
+      <Grid container spacing={3} alignItems="center" justify="center">
+        {cardItems.map((item) => {
+          return (
+            <Grid item xs={12} sm={6} md={4} key={item.title}>
+              <Card
+                title={item.title}
+                image={item.image}
+                detail={item.detail}
+                skills={item.skills}
+              />
+            </Grid>
+          );
+        })}
+      </Grid>
     </section>
   );
 };
