@@ -34,7 +34,7 @@ export const Header: React.FCX = ({ className }) => {
               Skills
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="#contact" smooth={true} offset={-40} duration={500}>
               Contact
             </Link>
@@ -43,7 +43,7 @@ export const Header: React.FCX = ({ className }) => {
             <Link to="#link" smooth={true} offset={-40} duration={500}>
               Links
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

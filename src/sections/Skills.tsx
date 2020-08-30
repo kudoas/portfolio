@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     display: "flex",
     overflow: "auto",
+    margin: "32px",
     flexDirection: "column",
     padding: theme.spacing(4),
   },
