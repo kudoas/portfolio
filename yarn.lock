@@ -4603,7 +4603,7 @@ process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -4712,6 +4712,13 @@ react-dom@^16.13.1:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.19.1"
+
+react-event-timeline@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/react-event-timeline/-/react-event-timeline-1.6.3.tgz#1be465a06f751e7814f3e3fb3173e09b6264b33e"
+  integrity sha512-hMGhC9/Xx3sPF/TSlMCA13hZm/2c5CvBxbkDM7bQ4yq6VJ6AmhjqKPnU6/3nVmWUGpK3YqhHb95OiqulxVD3Eg==
+  dependencies:
+    prop-types "^15.6.0"
 
 react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1:
   version "16.13.1"

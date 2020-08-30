@@ -21,6 +21,7 @@
     "gridjs-react": "^1.11.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-event-timeline": "^1.6.3",
     "react-scroll": "^1.8.0"
   },
   "devDependencies": {
