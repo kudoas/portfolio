@@ -8,7 +8,6 @@ export const Header: React.FCX = ({ className }) => {
   return (
     <header className={className}>
       <nav>
-        {/* <NavLink navList={}/> */}
         <ul>
           <li>
             <Link to="#top" smooth={true} offset={-40} duration={500}>
@@ -53,6 +52,7 @@ export const Header: React.FCX = ({ className }) => {
 
 export const StyledHeader = styled(Header)`
   position: sticky;
+  z-index: 1;
   top: 0;
   font-size: 18px;
   margin: 0;
