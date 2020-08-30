@@ -20,7 +20,7 @@ export const Main: React.FC = () => {
       <StyledWorks />
       <StyledSkills />
       {/* <Contact /> */}
-      <Links />
+      {/* <Links /> */}
       <Footer />
     </>
   );
