@@ -8,7 +8,7 @@ import { StyledWorks } from "../sections/Works";
 import { StyledSkills } from "../sections/Skills";
 import { Links } from "../sections/Links";
 import { Contact } from "../sections/Contact";
-import { StyledFooter } from "../sections/Footer";
+import Footer from "../sections/Footer";
 
 export const Main: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ export const Main: React.FC = () => {
       <StyledSkills />
       {/* <Contact /> */}
       <Links />
-      <StyledFooter />
+      <Footer />
     </>
   );
 };
