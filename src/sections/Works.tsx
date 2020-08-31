@@ -11,6 +11,9 @@ const useStyles = makeStyles({
   grid: {
     textAlign: "center",
   },
+  card: {
+    fontSize: "1.6rem",
+  },
 });
 
 export const Works: React.FCX = ({ className }) => {
@@ -56,6 +59,7 @@ export const Works: React.FCX = ({ className }) => {
           return (
             <Grid item xs={12} sm={6} md={4} key={item.title}>
               <Card
+                className={classes.card}
                 title={item.title}
                 image={item.image}
                 detail={item.detail}
