@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Timeline, TimelineEvent } from "react-event-timeline";
-import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import CreateIcon from "@material-ui/icons/Create";
 import VpnKeyIcon from "@material-ui/icons/VpnKey";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import DirectionsRunIcon from "@material-ui/icons/DirectionsRun";
+import SchoolIcon from "@material-ui/icons/School";
 
 import { StyledTitle } from "../components/Title";
 
@@ -45,7 +45,13 @@ export const Expreience: React.FCX = ({ className }) => {
       title: "Darn My Engineering Life",
       icon: <FavoriteIcon style={{ color: "red" }} />,
       period: "2019/02",
-      content: "プログラミングの楽しさに気付き、学習を開始する",
+      content: "エンジニアリングの楽しさに気付き、学習を開始する",
+      link: "#",
+    },
+    {
+      title: "Master’s degree, Department of Pharmacy, Meiji Pharmaceutical University, Japan",
+      icon: <SchoolIcon style={{ color: "brown" }} />,
+      period: "2017/04 - expected 2022/03",
       link: "#",
     },
   ];
@@ -63,9 +69,11 @@ export const Expreience: React.FCX = ({ className }) => {
               icon={ex.icon}
               iconColor="#09f"
             >
-              <Typography key={ex.title} component="p" variant="inherit">
-                {ex.content}
-              </Typography>
+              {ex.content ? (
+                <Typography key={ex.title} component="p" variant="inherit">
+                  {ex.content}
+                </Typography>
+              ) : null}
             </TimelineEvent>
           );
         })}
