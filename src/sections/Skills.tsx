@@ -15,6 +15,7 @@ import { StyledTitle } from "../components/Title";
 
 const useStyles = makeStyles((theme) => ({
   title: {
+    fontSize: "1.6rem",
     paddingLeft: "15px",
     display: "block",
     textAlign: "left",
@@ -22,9 +23,12 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     display: "flex",
     overflow: "auto",
-    margin: "32px",
+    marginBottom: "32px",
     flexDirection: "column",
     padding: theme.spacing(4),
+  },
+  tableCell: {
+    fontSize: "1.3rem",
   },
 }));
 
@@ -79,8 +83,8 @@ export const Skills: React.FCX = ({ className }) => {
             <TableBody>
               {skillLists.map((sk) => (
                 <TableRow key={sk.skill}>
-                  <TableCell>{sk.skill}</TableCell>
-                  <TableCell>{sk.content}</TableCell>
+                  <TableCell className={classes.tableCell}>{sk.skill}</TableCell>
+                  <TableCell className={classes.tableCell}>{sk.content}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
