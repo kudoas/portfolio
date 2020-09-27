@@ -1,25 +1,3 @@
-# react-ts-template
+# Portfolio
 
-Simplest React.js and TypeScript template
-
-## Recomendation
-
-- node.js
-  `version: 14.5.0`
-
-- yarn 
-  `version: 1.22.4`
-
-## Get Started
-
-1. install node modules
-
-```
-$ yarn
-```
-
-2. start development server
-
-```
-$ yarn run dev
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d1479fce-661b-49aa-b07c-ebc70b2ebc67/deploy-status)](https://app.netlify.com/sites/kudoa/deploys)
