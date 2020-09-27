@@ -1,15 +1,17 @@
 import React from "react";
 
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableRow,
+  Paper,
+  Grid,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-import { StyledTable } from "../components/Table";
+// import { StyledTable } from "../components/Table";
 import { Title } from "../components/Title";
 import { icon } from "../assets/index";
 
@@ -31,13 +33,13 @@ const useStyles = makeStyles({
 
 const About: React.FCX = ({ className }) => {
   const classes = useStyles();
-  const tableLists = [
-    [["Name"], ["工藤 大地 (Daichi Kudo)"]],
-    [["University"], ["明治薬科大学"]],
-    [["GitHub"], ["Kudoas", "https://github.com/Kudoas"]],
-    [["AtCoder"], ["kudoa", "https://atcoder.jp/users/kudoa"]],
-    [["Hatena Blog"], ["kudoa", "https://kudoa.hatenablog.com/"]],
-  ];
+  // const tableLists = [
+  //   [["Name"], ["工藤 大地 (Daichi Kudo)"]],
+  //   [["University"], ["明治薬科大学"]],
+  //   [["GitHub"], ["Kudoas", "https://github.com/Kudoas"]],
+  //   [["AtCoder"], ["kudoa", "https://atcoder.jp/users/kudoa"]],
+  //   [["Hatena Blog"], ["kudoa", "https://kudoa.hatenablog.com/"]],
+  // ];
 
   const profiles = [
     { item: "Name", content: "Daichi Kudo" },

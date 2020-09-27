@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import styled from "@emotion/styled";
 
-import { NavLink } from "../components/NavLink";
+// import { NavLink } from "../components/NavLink";
 
 export const Header: React.FCX = ({ className }) => {
   return (

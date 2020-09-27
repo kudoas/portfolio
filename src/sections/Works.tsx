@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { makeStyles } from "@material-ui/core/styles";
-import Grid, { GridSpacing } from "@material-ui/core/Grid";
+import Grid from "@material-ui/core/Grid";
 
 import { Title } from "../components/Title";
 import Card from "../components/Card";
