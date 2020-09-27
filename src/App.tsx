@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import { GlobalCSS, ResetCSS } from "./styles";
 import { Main } from "./pages";
