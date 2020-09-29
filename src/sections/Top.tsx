@@ -15,8 +15,10 @@ export const Top: React.FCX = ({ className }) => {
 
 export const StyledTop = styled(Top)`
   width: 100%;
-  background: #09f;
-  color: #fff;
+  font-family: "Courgette", cursive;
+  background: linear-gradient(270deg, #009ffd 0, #2a2a72);
+  /* background: linear-gradient(270deg, #2f80ed 0, #56ccf2); */
+  color: white;
   text-align: center;
   overflow: hidden;
   h1 {

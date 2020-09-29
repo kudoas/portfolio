@@ -7,8 +7,7 @@ interface Props {
 const Section = styled.section<Props>`
   transition: all 1s ease;
   transform: ${(props) => (props.inView ? "translateY(0)" : "translateY(50px)")};
-  visibility: ${(props) => (props.inView ? "visible" : "hidden")};
-  opacity: ${(props) => (props.inView ? 1 : 0.5)};
+  opacity: ${(props) => (props.inView ? 1 : 0)};
 `;
 
 export default Section;

@@ -14,8 +14,15 @@ export const GlobalCSS = () => (
           font-size: 1.6em;
           color: #09090f;
           background: rgba(243, 244, 245, 1);
+
           h1 {
-            font-size: 5rem;
+            font-size: 60px;
+          }
+
+          @media only screen and (max-width: 670px) {
+            h1 {
+              font-size: 30px;
+            }
           }
           h2 {
             font-size: 3.4rem;
