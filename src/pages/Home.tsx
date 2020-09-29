@@ -6,11 +6,9 @@ import About from "../sections/About";
 import { StyledExpreience } from "../sections/Experiences";
 import { StyledWorks } from "../sections/Works";
 import { StyledSkills } from "../sections/Skills";
-// import { Links } from "../sections/Links";
-// import { Contact } from "../sections/Contact";
 import Footer from "../sections/Footer";
 
-export const Main: React.FC = () => {
+export const Home: React.FC = () => {
   return (
     <>
       <StyledHeader />
@@ -19,8 +17,6 @@ export const Main: React.FC = () => {
       <StyledExpreience />
       <StyledWorks />
       <StyledSkills />
-      {/* <Contact /> */}
-      {/* <Links /> */}
       <Footer />
     </>
   );

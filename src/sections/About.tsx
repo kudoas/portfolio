@@ -11,8 +11,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-// import { StyledTable } from "../components/Table";
-import { Title } from "../components/Title";
+import { StyledTitle } from "../components/Title";
 import { icon } from "../assets/index";
 
 const useStyles = makeStyles({
@@ -31,27 +30,20 @@ const useStyles = makeStyles({
   },
 });
 
+const profiles = [
+  { item: "Name", content: "Daichi Kudo" },
+  { item: "Twitter", content: <a href="https://twitter.com/kudoadd">kudoadd</a> },
+  { item: "GitHub", content: <a href="https://github.com/Kudoas">Kudoas</a> },
+  { item: "AtCoder", content: <a href="https://atcoder.jp/users/kudoa">Kudoa</a> },
+  { item: "Hatena Blog", content: <a href="https://kudoa.hatenablog.com">クド戦記</a> },
+];
+
 const About: React.FCX = ({ className }) => {
   const classes = useStyles();
-  // const tableLists = [
-  //   [["Name"], ["工藤 大地 (Daichi Kudo)"]],
-  //   [["University"], ["明治薬科大学"]],
-  //   [["GitHub"], ["Kudoas", "https://github.com/Kudoas"]],
-  //   [["AtCoder"], ["kudoa", "https://atcoder.jp/users/kudoa"]],
-  //   [["Hatena Blog"], ["kudoa", "https://kudoa.hatenablog.com/"]],
-  // ];
-
-  const profiles = [
-    { item: "Name", content: "Daichi Kudo" },
-    { item: "Twitter", content: <a href="https://twitter.com/kudoadd">kudoadd</a> },
-    { item: "GitHub", content: <a href="https://github.com/Kudoas">Kudoas</a> },
-    { item: "AtCoder", content: <a href="https://atcoder.jp/users/kudoa">Kudoa</a> },
-    { item: "Hatena Blog", content: <a href="https://kudoa.hatenablog.com">クド戦記</a> },
-  ];
 
   return (
     <section className={className + " " + "#about"}>
-      <Title tag="h2">About</Title>
+      <StyledTitle>About</StyledTitle>
       <Grid container spacing={1}>
         <Grid item xs={12} sm={4} className={classes.icon}>
           <img className={classes.img} src={icon} alt="icon" />

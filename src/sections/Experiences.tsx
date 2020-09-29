@@ -58,7 +58,7 @@ export const Expreience: React.FCX = ({ className }) => {
 
   return (
     <section className={className + " " + "#experiences"}>
-      <StyledTitle tag="h2">Experiences</StyledTitle>
+      <StyledTitle>Experiences</StyledTitle>
       <Timeline>
         {myExperiences.map((ex) => {
           return (

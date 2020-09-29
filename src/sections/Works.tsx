@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 
 import { Title } from "../components/Title";
 import Card from "../components/Card";
-import { blog, burgerBuilder, board, htmlTableCreator, slackIcon, slack } from "./../assets";
+import { blog, burgerBuilder, board, htmlTableCreator, slack } from "./../assets";
 
 const useStyles = makeStyles({
   grid: {
@@ -16,44 +16,45 @@ const useStyles = makeStyles({
   },
 });
 
-export const Works: React.FCX = ({ className }) => {
+const cardItems = [
+  {
+    title: "個人メディア",
+    image: blog,
+    detail: "日々学習したことや知見を共有するためのブログ",
+    skills: "gatsby, google analytics",
+  },
+  {
+    title: "Burger Builder",
+    image: burgerBuilder,
+    detail: "(デモ)オーダーメイドのハンバーガーを注文できるアプリ",
+    skills: "React.js Redux",
+  },
+  {
+    title: "掲示板",
+    image: board,
+    detail: "Django製の掲示板アプリ",
+    skills: "Django, PostgresQL, S3",
+  },
+  {
+    title: "HTML Table Creator",
+    image: htmlTableCreator,
+    detail: "HTMLを作成するツール",
+    skills: "React.js TypeScript ContextAPI",
+  },
+  {
+    title: "積読管理用bot",
+    image: slack,
+    detail: "週に一回登録した本を通知してくれるslack bot",
+    skills: "GAS, Webhook API, Spread Sheet",
+  },
+];
+
+export const Works: React.FCX = () => {
   const classes = useStyles();
-  const cardItems = [
-    {
-      title: "個人メディア",
-      image: blog,
-      detail: "日々学習したことや知見を共有するためのブログ",
-      skills: "gatsby, google analytics",
-    },
-    {
-      title: "Burger Builder",
-      image: burgerBuilder,
-      detail: "(デモ)オーダーメイドのハンバーガーを注文できるアプリ",
-      skills: "React.js Redux",
-    },
-    {
-      title: "掲示板",
-      image: board,
-      detail: "Django製の掲示板アプリ",
-      skills: "Django, PostgresQL, S3",
-    },
-    {
-      title: "HTML Table Creator",
-      image: htmlTableCreator,
-      detail: "HTMLを作成するツール",
-      skills: "React.js TypeScript ContextAPI",
-    },
-    {
-      title: "積読管理用bot",
-      image: slack,
-      detail: "週に一回登録した本を通知してくれるslack bot",
-      skills: "GAS, Webhook API, Spread Sheet",
-    },
-  ];
 
   return (
     <section className="#works">
-      <Title tag="h2">Works</Title>
+      <Title>Works</Title>
       <Grid container spacing={3} alignItems="center" justify="center">
         {cardItems.map((item) => {
           return (

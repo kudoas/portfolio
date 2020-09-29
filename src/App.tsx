@@ -1,14 +1,19 @@
 import React from "react";
 
+import { ThemeProvider as MaterialThemeProvider } from "@material-ui/styles";
+
+import { theme } from "./theme/theme";
 import { GlobalCSS, ResetCSS } from "./styles";
-import { Main } from "./pages";
+import { Home } from "./pages/Home";
 
 const App: React.FC = () => {
   return (
     <>
-      <ResetCSS />
-      <GlobalCSS />
-      <Main />
+      <MaterialThemeProvider theme={theme}>
+        <ResetCSS />
+        <GlobalCSS />
+        <Home />
+      </MaterialThemeProvider>
     </>
   );
 };

@@ -34,42 +34,43 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// const languages = [
+//   { skill: "Python (Django)", content: "Web開発、競技プログラミング" },
+//   {
+//     skill: "JavaScript (React.js, Node.js, Express.js, Gatsby.js)",
+//     content: "個人開発：Webアプリ、API",
+//   },
+//   { skill: "TypeScript (React.js, Node.js, Express.js)", content: "個人開発：Webアプリ、API" },
+//   { skill: "Golang", content: "プロダクト開発型インターン" },
+//   { skill: "Google Apps Script", content: "slack bot (積読管理、記事レコメンド)" },
+// ];
+// const databases = [{ skill: "MySQL, PostgresQL, MongoDB", content: "Web開発のDB" }];
+// const clouds = [
+//   { skill: "Heroku, AWS S3, Netlify, Firebase", content: "インフラ、ホスティング" },
+// ];
+// const tools = [{ skill: "Googla Analytics", content: "マーケティング" }];
+
+const skillLists = [
+  { skill: "Python (Django)", content: "Web開発、競技プログラミング" },
+  {
+    skill: "JavaScript (React.js, Node.js, Express.js, Gatsby.js)",
+    content: "個人開発：Webアプリ、API",
+  },
+  { skill: "TypeScript (React.js, Node.js, Express.js)", content: "個人開発：Webアプリ、API" },
+  { skill: "Golang", content: "プロダクト開発型インターン" },
+  { skill: "Google Apps Script", content: "slack bot (積読管理、記事レコメンド)" },
+  { skill: "HTML5 ＆ CSS3", content: "フロントデザイン、Styled Component" },
+  { skill: "PostgresQL, MongoDB", content: "Web開発のDB" },
+  { skill: "Heroku, AWS S3, Netlify, Firebase", content: "インフラ、ホスティング" },
+  { skill: "Googla Analytics", content: "マーケティング" },
+];
+
 export const Skills: React.FCX = ({ className }) => {
   const classes = useStyles();
-  const languages = [
-    { skill: "Python (Django)", content: "Web開発、競技プログラミング" },
-    {
-      skill: "JavaScript (React.js, Node.js, Express.js, Gatsby.js)",
-      content: "個人開発：Webアプリ、API",
-    },
-    { skill: "TypeScript (React.js, Node.js, Express.js)", content: "個人開発：Webアプリ、API" },
-    { skill: "Golang", content: "プロダクト開発型インターン" },
-    { skill: "Google Apps Script", content: "slack bot (積読管理、記事レコメンド)" },
-  ];
-  const databases = [{ skill: "MySQL, PostgresQL, MongoDB", content: "Web開発のDB" }];
-  const clouds = [
-    { skill: "Heroku, AWS S3, Netlify, Firebase", content: "インフラ、ホスティング" },
-  ];
-  const tools = [{ skill: "Googla Analytics", content: "マーケティング" }];
-
-  const skillLists = [
-    { skill: "Python (Django)", content: "Web開発、競技プログラミング" },
-    {
-      skill: "JavaScript (React.js, Node.js, Express.js, Gatsby.js)",
-      content: "個人開発：Webアプリ、API",
-    },
-    { skill: "TypeScript (React.js, Node.js, Express.js)", content: "個人開発：Webアプリ、API" },
-    { skill: "Golang", content: "プロダクト開発型インターン" },
-    { skill: "Google Apps Script", content: "slack bot (積読管理、記事レコメンド)" },
-    { skill: "HTML5 ＆ CSS3", content: "フロントデザイン、Styled Component" },
-    { skill: "PostgresQL, MongoDB", content: "Web開発のDB" },
-    { skill: "Heroku, AWS S3, Netlify, Firebase", content: "インフラ、ホスティング" },
-    { skill: "Googla Analytics", content: "マーケティング" },
-  ];
 
   return (
     <section className={className + " " + "#skills"}>
-      <StyledTitle tag="h2">Skills</StyledTitle>
+      <StyledTitle>Skills</StyledTitle>
       <Paper className={classes.paper}>
         <TableContainer>
           <Typography

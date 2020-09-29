@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import { Title } from "../components/Title";
 import { Wave } from "../components/Wave";
 
 export const Top: React.FCX = ({ className }) => {
   return (
     <section className={className + " " + "#top"}>
-      <Title tag="h1">Daichi Kudo</Title>
+      <h1>Daichi Kudo</h1>
       <p>PORTFOLIO</p>
       <Wave />
     </section>
