@@ -24,6 +24,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-event-timeline": "^1.6.3",
+    "react-intersection-observer": "^8.29.0",
     "react-scroll": "^1.8.0"
   },
   "devDependencies": {

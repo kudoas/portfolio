@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useInView } from "react-intersection-observer";
 import {
   Table,
   TableBody,
@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
+import Section from "../styles/Section";
 import { StyledTitle } from "../components/Title";
 import { icon } from "../assets/index";
 
@@ -38,11 +39,14 @@ const profiles = [
   { item: "Hatena Blog", content: <a href="https://kudoa.hatenablog.com">クド戦記</a> },
 ];
 
-const About: React.FCX = ({ className }) => {
+const About: React.FC = () => {
   const classes = useStyles();
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
 
   return (
-    <section className={className + " " + "#about"}>
+    <Section inView={inView} className="#about" ref={ref}>
       <StyledTitle>About</StyledTitle>
       <Grid container spacing={1}>
         <Grid item xs={12} sm={4} className={classes.icon}>
@@ -65,7 +69,7 @@ const About: React.FCX = ({ className }) => {
           </Paper>
         </Grid>
       </Grid>
-    </section>
+    </Section>
   );
 };
 
