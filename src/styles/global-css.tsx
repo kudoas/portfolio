@@ -11,18 +11,38 @@ export const GlobalCSS = () => (
           font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium",
             "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka,
             "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-          font-size: 1.6em;
-          color: #09090f;
-          background: rgba(243, 244, 245, 1);
-
-          h1 {
-            font-size: 60px;
-          }
-
-          @media only screen and (max-width: 670px) {
-            h1 {
-              font-size: 30px;
+          /* はてなブログアイコン */
+          .fa-hatena {
+            &:before {
+              content: "B!";
+              font-style: normal;
+              font-family: Verdana;
+              font-weight: bold;
             }
+          }
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #4a4a4a;
+          a:link {
+            color: black;
+          }
+          a:visited {
+            color: black;
+          }
+          h1 {
+            font-size: 4rem;
+            margin: 12rem 1.25rem 2.5rem 1.25rem;
+          }
+          @media screen and (max-width: 768px) {
+            h1 {
+              font-size: 3rem;
+              margin: 6rem 1.25rem 2.5rem 1.25rem;
+            }
+          }
+          @media screen and (max-width: 480px) {
+          }
+          @media screen and (max-height: 430px) {
           }
           h2 {
             font-size: 3.4rem;

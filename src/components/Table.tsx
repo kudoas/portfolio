@@ -1,49 +1,45 @@
 import React from "react";
-import styled from "@emotion/styled";
+import { Table as MuiTable, TableBody, TableCell, TableRow } from "@material-ui/core";
 
-type Props = {
-  tableLists: string[][][];
-};
+import { makeStyles } from "@material-ui/core/styles";
 
-const returnAnchor = (arr: string[], rowKey: number, itemKey: number) => {
-  const uniqueKey = String(rowKey) + String(itemKey);
-  if (arr.length == 2) {
-    return (
-      <td key={uniqueKey}>
-        <a key={uniqueKey} href={arr[1]}>
-          {arr[0]}
-        </a>
-      </td>
-    );
-  }
-  return <td key={uniqueKey}>{arr[0]}</td>;
-};
+const useStyles = makeStyles({
+  table: {
+    width: "80%",
+    margin: "0 auto",
+  },
+  tableCell: {
+    fontSize: "1.5rem",
+  },
+  links: {
+    display: "flex",
+    justifyContent: "space-around",
+    width: "80%",
+    margin: "30px auto ",
+  },
+});
 
-export const Table: React.FCX<Props> = (props) => {
-  const { tableLists, className } = props;
+interface Props {
+  profiles: Profile[];
+}
 
-  const table = tableLists.map((Row, rowKey) => (
-    <tr key={String(rowKey)}>{Row.map((item, itemKey) => returnAnchor(item, rowKey, itemKey))}</tr>
-  ));
+interface Profile {
+  item: string;
+  content: string;
+}
 
+export const Table: React.FCX<Props> = ({ profiles }) => {
+  const classes = useStyles();
   return (
-    <table className={className}>
-      <tbody>{table}</tbody>
-    </table>
+    <MuiTable className={classes.table}>
+      <TableBody>
+        {profiles.map((p) => (
+          <TableRow key={p.item}>
+            <TableCell className={classes.tableCell}>{p.item}</TableCell>
+            <TableCell className={classes.tableCell}>{p.content}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </MuiTable>
   );
 };
-
-export const StyledTable = styled(Table)`
-  tbody {
-    font-size: 16px;
-    tr {
-      border-bottom: solid 1px #eee;
-      td {
-        padding: 5px 10px;
-      }
-    }
-    tr:hover {
-      background-color: #d4f0fd;
-    }
-  }
-`;
