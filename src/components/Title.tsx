@@ -12,10 +12,8 @@ export const Title: React.FCX = (props) => {
 };
 
 export const StyledTitle = styled(Title)`
-  display: inline;
   text-align: center;
   h2 {
-    text-align: center;
     margin: 20px 5%;
     &::after {
       display: block;

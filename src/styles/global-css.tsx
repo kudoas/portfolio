@@ -48,7 +48,7 @@ export const GlobalCSS = () => (
             font-size: 3.4rem;
           }
           h3 {
-            font-size: 2.4rem;
+            font-size: 2rem;
           }
           h1,
           h2,
@@ -61,7 +61,6 @@ export const GlobalCSS = () => (
           section {
             width: 80%;
             margin: 0 auto;
-            text-align: center;
           }
         }
       }

@@ -82,7 +82,7 @@ const About: React.FC = () => {
     <Section inView={inView} className="#about" ref={ref}>
       <StyledTitle>About</StyledTitle>
       <Grid container spacing={1}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} style={{ textAlign: "center" }}>
           <Thumbnail />
         </Grid>
         <Grid item xs={12} sm={6}>
