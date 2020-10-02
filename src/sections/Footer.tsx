@@ -1,30 +1,26 @@
 import React from "react";
+import styled from "@emotion/styled";
 
-import { Typography, Container, Link } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "@material-ui/core";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
-const useStyles = makeStyles((theme) => ({
-  footer: {
-    padding: theme.spacing(3, 2),
-    textAlign: "center",
-    marginTop: "auto",
-    backgroundColor:
-      theme.palette.type === "light" ? theme.palette.grey[200] : theme.palette.grey[800],
-  },
-}));
-
-const Footer: React.FCX = () => {
-  const classes = useStyles();
+const Footer: React.FCX = ({ className }) => {
   return (
-    <footer className={"#footer" + " " + classes.footer}>
-      <Container maxWidth="xs">
-        <Typography variant="body1">
-          Copyright©2020. Daichi Kudo.{" "}
-          <Link href="https://github.com/Kudoas/Portfolio">Source Code</Link>
-        </Typography>
-      </Container>
+    <footer className={"#footer" + " " + className}>
+      Copyright © 2020. Daichi Kudo.{" "}
+      <Link href="https://github.com/Kudoas/Portfolio">
+        <GitHubIcon />
+      </Link>
     </footer>
   );
 };
+
+export const StyledFooter = styled(Footer)`
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  background-color: #eee;
+  font-size: 1.3rem;
+`;
 
 export default Footer;

@@ -5,7 +5,7 @@ import { Title } from "../components/Title";
 export const Links: React.FCX = () => {
   return (
     <section className="#link">
-      <Title tag="h2">Links</Title>
+      <Title>Links</Title>
       <ul>
         <li>GitHub</li>
         <li>Twitter</li>

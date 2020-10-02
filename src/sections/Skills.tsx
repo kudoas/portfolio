@@ -1,99 +1,39 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 
-import { makeStyles } from "@material-ui/core/styles";
-import {
-  Table,
-  TableBody,
-  TableContainer,
-  TableCell,
-  TableRow,
-  Paper,
-  Typography,
-} from "@material-ui/core";
-// import TableHead from "@material-ui/core/TableHead";
-
+import Section from "../styles/Section";
+import { Table } from "../components/Table";
 import { StyledTitle } from "../components/Title";
 
-const useStyles = makeStyles((theme) => ({
-  title: {
-    fontSize: "1.6rem",
-    paddingLeft: "15px",
-    display: "block",
-    textAlign: "left",
+const skillLists = [
+  {
+    item: "Python: Django, Flask, Pandas",
+    content: "Webアプリ, 競技プログラミング, 医療系データの解析",
   },
-  paper: {
-    display: "flex",
-    overflow: "auto",
-    marginBottom: "32px",
-    flexDirection: "column",
-    padding: theme.spacing(4),
+  { item: "TypeScript: React.js, Node.js, Express.js", content: "Webアプリ、API" },
+  {
+    item: "JavaScript: React.js, Node.js, Express.js, Gatsby.js",
+    content: "Webアプリ、API",
   },
-  tableCell: {
-    fontSize: "1.3rem",
-  },
-}));
+  { item: "Go", content: "API開発" },
+  { item: "Google Apps Script", content: "slack bot開発：積読管理、記事レコメンド)" },
+  { item: "HTML5 ＆ CSS3", content: "フロントデザイン, Styled Component" },
+  { item: "MySQL, PostgresQL, MongoDB", content: "Webサービスのデータベース" },
+  { item: "Heroku, AWS S3, Netlify, Firebase", content: "インフラ" },
+  { item: "Googla Analytics", content: "モニタリング" },
+];
 
 export const Skills: React.FCX = ({ className }) => {
-  const classes = useStyles();
-  const languages = [
-    { skill: "Python (Django)", content: "Web開発、競技プログラミング" },
-    {
-      skill: "JavaScript (React.js, Node.js, Express.js, Gatsby.js)",
-      content: "個人開発：Webアプリ、API",
-    },
-    { skill: "TypeScript (React.js, Node.js, Express.js)", content: "個人開発：Webアプリ、API" },
-    { skill: "Golang", content: "プロダクト開発型インターン" },
-    { skill: "Google Apps Script", content: "slack bot (積読管理、記事レコメンド)" },
-  ];
-  const databases = [{ skill: "MySQL, PostgresQL, MongoDB", content: "Web開発のDB" }];
-  const clouds = [
-    { skill: "Heroku, AWS S3, Netlify, Firebase", content: "インフラ、ホスティング" },
-  ];
-  const tools = [{ skill: "Googla Analytics", content: "マーケティング" }];
-
-  const skillLists = [
-    { skill: "Python (Django)", content: "Web開発、競技プログラミング" },
-    {
-      skill: "JavaScript (React.js, Node.js, Express.js, Gatsby.js)",
-      content: "個人開発：Webアプリ、API",
-    },
-    { skill: "TypeScript (React.js, Node.js, Express.js)", content: "個人開発：Webアプリ、API" },
-    { skill: "Golang", content: "プロダクト開発型インターン" },
-    { skill: "Google Apps Script", content: "slack bot (積読管理、記事レコメンド)" },
-    { skill: "HTML5 ＆ CSS3", content: "フロントデザイン、Styled Component" },
-    { skill: "PostgresQL, MongoDB", content: "Web開発のDB" },
-    { skill: "Heroku, AWS S3, Netlify, Firebase", content: "インフラ、ホスティング" },
-    { skill: "Googla Analytics", content: "マーケティング" },
-  ];
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
 
   return (
-    <section className={className + " " + "#skills"}>
-      <StyledTitle tag="h2">Skills</StyledTitle>
-      <Paper className={classes.paper}>
-        <TableContainer>
-          <Typography
-            component="h3"
-            variant="h5"
-            color="primary"
-            gutterBottom
-            className={classes.title}
-          >
-            Programming Language, Database, Cloud, Devtools, etc.
-          </Typography>
-          <Table>
-            <TableBody>
-              {skillLists.map((sk) => (
-                <TableRow key={sk.skill}>
-                  <TableCell className={classes.tableCell}>{sk.skill}</TableCell>
-                  <TableCell className={classes.tableCell}>{sk.content}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Paper>
-    </section>
+    <Section className={className + " " + "#skills"} ref={ref} inView={inView}>
+      <StyledTitle>Skills</StyledTitle>
+      <Table profiles={skillLists} />
+    </Section>
   );
 };
 
