@@ -41,7 +41,7 @@ const links = [
   {
     item: "Twitter",
     content: (
-      <a href="https://twitter.com/kudoadd">
+      <a href="https://twitter.com/kudoadd" key="1">
         <TwitterIcon style={{ fontSize: "30px" }} />
       </a>
     ),
@@ -49,7 +49,7 @@ const links = [
   {
     item: "GitHub",
     content: (
-      <a href="https://github.com/Kudoas">
+      <a href="https://github.com/Kudoas" key="2">
         <GitHubIcon style={{ fontSize: "30px" }} />
       </a>
     ),
@@ -57,7 +57,7 @@ const links = [
   {
     item: "AtCoder",
     content: (
-      <a href="https://atcoder.jp/users/kudoa">
+      <a href="https://atcoder.jp/users/kudoa" key="3">
         <img src={atcoder} alt="atcoder" style={{ width: "30px" }} />
       </a>
     ),
@@ -65,7 +65,7 @@ const links = [
   {
     item: "Hatena Blog",
     content: (
-      <a href="https://kudoa.hatenablog.com">
+      <a href="https://kudoa.hatenablog.com" key="4">
         <i className="fa-hatena" style={{ fontSize: "25px" }}></i>
       </a>
     ),
