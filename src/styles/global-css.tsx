@@ -25,10 +25,10 @@ export const GlobalCSS = () => (
           line-height: 1.5;
           color: #4a4a4a;
           a:link {
-            color: black;
+            color: #0044cc;
           }
           a:visited {
-            color: black;
+            color: #0044cc;
           }
           h1 {
             font-size: 4rem;

@@ -2,7 +2,7 @@ import React from "react";
 
 import { StyledHeader } from "../sections/Header";
 import { StyledTop } from "../sections/Top";
-import { About } from "../sections/About";
+import { StyledAbout } from "../sections/About";
 import { StyledExpreience } from "../sections/Experiences";
 import { StyledWorks } from "../sections/Works";
 import { StyledSkills } from "../sections/Skills";
@@ -13,7 +13,7 @@ export const Home: React.FC = () => {
     <>
       <StyledHeader />
       <StyledTop />
-      <About />
+      <StyledAbout />
       <StyledExpreience />
       <StyledWorks />
       <StyledSkills />
