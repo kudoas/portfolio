@@ -2,11 +2,11 @@ import React from "react";
 
 import { StyledHeader } from "../sections/Header";
 import { StyledTop } from "../sections/Top";
-import About from "../sections/About";
+import { About } from "../sections/About";
 import { StyledExpreience } from "../sections/Experiences";
 import { StyledWorks } from "../sections/Works";
 import { StyledSkills } from "../sections/Skills";
-import Footer from "../sections/Footer";
+import { StyledFooter } from "../sections/Footer";
 
 export const Home: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ export const Home: React.FC = () => {
       <StyledExpreience />
       <StyledWorks />
       <StyledSkills />
-      <Footer />
+      <StyledFooter />
     </>
   );
 };

@@ -72,7 +72,7 @@ const links = [
   },
 ];
 
-const About: React.FC = () => {
+export const About: React.FC = () => {
   const classes = useStyles();
   const { ref, inView } = useInView({
     threshold: 0,
@@ -93,5 +93,3 @@ const About: React.FC = () => {
     </Section>
   );
 };
-
-export default About;
