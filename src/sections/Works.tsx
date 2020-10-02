@@ -34,6 +34,7 @@ const cardItems = [
       "React.js",
       "EC2",
       "ECS",
+      "Docker",
       "New Relic",
     ],
     repoLink: (
@@ -95,7 +96,7 @@ const cardItems = [
     title: "HTML Table Creator",
     image: htmlTableCreator,
     detail: "HTMLの<TABLE>タグをGUIで作成できるWebアプリ",
-    skills: ["React.js", "TypeScript", "Context API"],
+    skills: ["React.js", "TypeScript", "Context API", "Netlify Form"],
     repoLink: (
       <a href="https://github.com/Kudoas/html-table-creator" target="_break">
         REPO
@@ -111,7 +112,7 @@ const cardItems = [
     title: "Cookle",
     image: cookle,
     detail: "自炊のモチベーション管理を目的したSNS型アプリ。楽天インターン期間中に6名で作成した。",
-    skills: ["Flask", "React.js", "GCP", "S3"],
+    skills: ["Flask", "React.js", "GCP", "S3", "SQLite"],
     repoLink: (
       <a href="https://github.com/Kudoas/Cookle" target="_break">
         REPO
