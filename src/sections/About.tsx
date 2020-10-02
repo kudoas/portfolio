@@ -1,5 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import styled from "@emotion/styled";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import TwitterIcon from "@material-ui/icons/Twitter";
@@ -72,14 +73,14 @@ const links = [
   },
 ];
 
-export const About: React.FC = () => {
+export const About: React.FCX = ({ className }) => {
   const classes = useStyles();
   const { ref, inView } = useInView({
     threshold: 0,
   });
 
   return (
-    <Section inView={inView} className="#about" ref={ref}>
+    <Section inView={inView} className={className + " " + "#about"} ref={ref}>
       <StyledTitle>About</StyledTitle>
       <Grid container spacing={1}>
         <Grid item xs={12} sm={6} style={{ textAlign: "center" }}>
@@ -93,3 +94,12 @@ export const About: React.FC = () => {
     </Section>
   );
 };
+
+export const StyledAbout = styled(About)`
+  a:link {
+    color: black;
+  }
+  a:visited {
+    color: black;
+  }
+`;
