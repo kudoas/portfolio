@@ -68,10 +68,10 @@ const StyledCard = styled(Card)`
     margin-bottom: 1.5rem;
   }
   li {
+    display: inline-block;
     overflow-wrap: break-word;
     font-size: 1.3rem;
     margin-right: 5px;
-    display: inline;
     border-radius: 20px;
     padding: 3px 15px;
     color: #fff;
@@ -80,6 +80,9 @@ const StyledCard = styled(Card)`
   }
   span {
     white-space: nowrap;
+  }
+  a {
+    font-size: 1.3rem;
   }
 `;
 
