@@ -1,3 +1,4 @@
 src/assets/**
 src/types/**
-**.test.tsx
+*.test.tsx
+*.js
