@@ -39,7 +39,7 @@ const cardItems = [
     ],
     repoLink: (
       <a href="https://github.com/tetsuzawa/slimline" target="_break">
-        Public REPO
+        PUBLIC REPO
       </a>
     ),
   },
@@ -54,7 +54,7 @@ const cardItems = [
       </a>
     ),
     url: (
-      <a href="https://www.kudolog.net/" target="_break">
+      <a href="https://kudolog.netlify.app" target="_break">
         URL
       </a>
     ),
@@ -91,6 +91,11 @@ const cardItems = [
         REPO
       </a>
     ),
+    url: (
+      <a href="https://react-my-burger-b6f23.firebaseapp.com/" target="_break">
+        URL
+      </a>
+    ),
   },
   {
     title: "HTML Table Creator",
@@ -115,7 +120,7 @@ const cardItems = [
     skills: ["Flask", "React.js", "GCP", "S3", "SQLite"],
     repoLink: (
       <a href="https://github.com/Kudoas/Cookle" target="_break">
-        REPO
+        PUBLIC REPO
       </a>
     ),
   },
