@@ -14,33 +14,39 @@ import { StyledTimeline } from "../components/Timeline/Timeline";
 
 const myExperiences = [
   {
+    title: "YUMEMI Inc. Intern",
+    icon: <LocalMallIcon />,
+    date: "2020/11/16 - 2020/11/20",
+    content: "Coming soon",
+    color: "rgb(33, 150, 243)",
+  },
+  {
     title: "技育展 登壇",
     icon: <EmojiPeopleIcon />,
     date: "2020/09/26",
     content:
       "「未来の技術者を育てる」ことを目的とし自らのアウトプットを「展示」する学生向けテックカンファレンス。インターンで作成したWebアプリ「SlimLine」を追加開発し、チームメンバーと登壇した。",
     color: "#00CC00",
-    link: (
-      <a href="https://speakerdeck.com/kudoas/slimline">登壇資料/ SlimLineというサービスについて</a>
-    ),
+    link: <a href="https://speakerdeck.com/kudoas/slimline">プレゼン資料/ SlimLine</a>,
   },
   {
-    title: "楽天 インターン",
+    title: "Rakuten Intern",
     icon: <LocalMallIcon />,
     date: "2020/09/01 - 2020/09/11",
     content:
       "6人1チームで「オンラインで人と人を繋ぐ」というテーマのもと新規プロトタイプ開発インターン。サービスのアイデアの構築、言語や使用するサービスの選定、システム・DB・API設計、開発とQAまで2週間で行い、最終プレゼンを英語で行った。結果は7チーム中3位であった。",
     color: "rgb(33, 150, 243)",
+    link: <a href="https://speakerdeck.com/kudoas/cookle">プレゼン資料/ Cookle</a>,
   },
   {
-    title: "VOYAGE GROUP Treasure",
+    title: "VOYAGE GROUP Intern Treasure",
     icon: <LocalMallIcon />,
     date: "2020/08",
     content:
       "Goを使用したAPI開発とエンドポイント・データベース設計やReactやWebRTCを使用したフロントエンド開発、インフラまで含めた事前講義と、学生4人＋サポーター3人での2週間のチーム開発の約1か月のインターン。アイデアや異常系（エラーハンドリング）の実装、サービスの完成度が評価され、UI/UX賞・アイデア賞・グランプリを受賞した。",
     color: "rgb(33, 150, 243)",
     link: (
-      <a href="https://kudoa.hatenablog.com/entry/2020/10/01/120757">
+      <a href="https://kudolog.net/posts/treasure/">
         ブログ/ VOYAGE GROUPのインターン「Treasure」に参加して
       </a>
     ),

@@ -56,18 +56,18 @@ const links = [
     ),
   },
   {
-    item: "AtCoder",
+    item: "Hatena Blog",
     content: (
-      <a href="https://atcoder.jp/users/kudoa" key="3">
-        <img src={atcoder} alt="atcoder" style={{ width: "30px" }} />
+      <a href="https://kudolog.net/" key="4">
+        <i className="fa-hatena" style={{ fontSize: "25px" }}></i>
       </a>
     ),
   },
   {
-    item: "Hatena Blog",
+    item: "AtCoder",
     content: (
-      <a href="https://kudoa.hatenablog.com" key="4">
-        <i className="fa-hatena" style={{ fontSize: "25px" }}></i>
+      <a href="https://atcoder.jp/users/kudoa" key="3">
+        <img src={atcoder} alt="atcoder" style={{ width: "30px" }} />
       </a>
     ),
   },

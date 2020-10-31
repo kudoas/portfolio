@@ -20,6 +20,22 @@ const useStyles = makeStyles({
 
 const cardItems = [
   {
+    title: "HTML Table Creator",
+    image: htmlTableCreator,
+    detail: "HTMLの<TABLE>タグをGUIで作成できるWebアプリ",
+    skills: ["React.js", "TypeScript", "Context API", "Netlify Form"],
+    repoLink: (
+      <a href="https://github.com/Kudoas/html-table-creator" target="_break">
+        REPO
+      </a>
+    ),
+    url: (
+      <a href="https://html-table-creator.netlify.app/" target="_break">
+        URL
+      </a>
+    ),
+  },
+  {
     title: "SlimLine",
     image: slimline,
     detail:
@@ -38,13 +54,24 @@ const cardItems = [
       "New Relic",
     ],
     repoLink: (
-      <a href="https://github.com/tetsuzawa/slimline" target="_break">
+      <a href="https://github.com/kudoas/slimline" target="_break">
         PUBLIC REPO
       </a>
     ),
   },
   {
-    title: "Kudoaの自習室",
+    title: "Cookle",
+    image: cookle,
+    detail: "自炊のモチベーション管理を目的したSNS型アプリ。楽天インターン期間中に6名で作成した。",
+    skills: ["Flask", "React.js", "GCP", "S3", "SQLite"],
+    repoLink: (
+      <a href="https://github.com/Kudoas/Cookle" target="_break">
+        PUBLIC REPO
+      </a>
+    ),
+  },
+  {
+    title: "（旧ブログ）Kudoaの自習室",
     image: blog,
     detail: "日々学習したことや知見を共有するためのブログ",
     skills: ["gatsby.js", "GraphQL", "S3", "Netlify"],
@@ -55,22 +82,6 @@ const cardItems = [
     ),
     url: (
       <a href="https://kudolog.netlify.app" target="_break">
-        URL
-      </a>
-    ),
-  },
-  {
-    title: "Simpleな掲示板",
-    image: board,
-    detail: "初めて作成したWebアプリ。フレームワークにのった開発やデータモデリングをここで学んだ。",
-    skills: ["Django", "BootStrap4", "PostgresQL", "S3", "Docker", "Heroku", "AWS S3"],
-    repoLink: (
-      <a href="https://github.com/Kudoas/KudoLog" target="_break">
-        REPO
-      </a>
-    ),
-    url: (
-      <a href="https://kudolog.herokuapp.com/" target="_break">
         URL
       </a>
     ),
@@ -98,33 +109,6 @@ const cardItems = [
     ),
   },
   {
-    title: "HTML Table Creator",
-    image: htmlTableCreator,
-    detail: "HTMLの<TABLE>タグをGUIで作成できるWebアプリ",
-    skills: ["React.js", "TypeScript", "Context API", "Netlify Form"],
-    repoLink: (
-      <a href="https://github.com/Kudoas/html-table-creator" target="_break">
-        REPO
-      </a>
-    ),
-    url: (
-      <a href="https://html-table-creator.netlify.app/" target="_break">
-        URL
-      </a>
-    ),
-  },
-  {
-    title: "Cookle",
-    image: cookle,
-    detail: "自炊のモチベーション管理を目的したSNS型アプリ。楽天インターン期間中に6名で作成した。",
-    skills: ["Flask", "React.js", "GCP", "S3", "SQLite"],
-    repoLink: (
-      <a href="https://github.com/Kudoas/Cookle" target="_break">
-        PUBLIC REPO
-      </a>
-    ),
-  },
-  {
     title: "積読管理用のSlack Bot",
     image: slack,
     detail: "週に一回登録した本を通知してくれるslack bot",
@@ -132,6 +116,22 @@ const cardItems = [
     repoLink: (
       <a href="https://github.com/Kudoas/book-recommendation-bot" target="_break">
         REPO
+      </a>
+    ),
+  },
+  {
+    title: "Simpleな掲示板",
+    image: board,
+    detail: "初めて作成したWebアプリ。フレームワークにのった開発やデータモデリングをここで学んだ。",
+    skills: ["Django", "BootStrap4", "PostgresQL", "S3", "Docker", "Heroku", "AWS S3"],
+    repoLink: (
+      <a href="https://github.com/Kudoas/KudoLog" target="_break">
+        REPO
+      </a>
+    ),
+    url: (
+      <a href="https://kudolog.herokuapp.com/" target="_break">
+        URL
       </a>
     ),
   },
