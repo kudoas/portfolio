@@ -14,11 +14,15 @@ import { StyledTimeline } from "../components/Timeline/Timeline";
 
 const myExperiences = [
   {
-    title: "YUMEMI Inc. Intern",
+    title: "YUMEMI Intern",
     icon: <LocalMallIcon />,
     date: "2020/11/16 - 2020/11/20",
-    content: "Coming soon",
+    content:
+      "React.jsを使用したプロトタイプ作成、管理しやすいコンポーネントの設計、CI/CDの導入を経験、純粋なstyled-componentによるデザイニングを経験した。",
     color: "rgb(33, 150, 243)",
+    link: (
+      <a href="https://kudolog.net/posts/yumemi-intern/">ブログ/ ゆめみのインターンに参加して</a>
+    ),
   },
   {
     title: "技育展 登壇",
