@@ -10,7 +10,7 @@
     "lint": "eslint --ext .ts,.tsx 'src/**/**'",
     "lint:fix": "eslint --fix --ext .ts,.tsx 'src/**/**'"
   },
-  "author": "Kudoa",
+  "author": "daichi",
   "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.28",
