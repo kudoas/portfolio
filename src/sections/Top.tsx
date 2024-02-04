@@ -6,6 +6,7 @@ import { Wave } from "../components/Wave";
 export const Top: React.FCX = ({ className }) => {
   return (
     <section className={className + " " + "#top"}>
+      {/* eslint-disable-next-line react/no-unescaped-entities */}
       <h1>Daichi Kudo's Portfolio</h1>
       <Wave />
     </section>

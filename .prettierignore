@@ -1,3 +1,9 @@
 /node_modules
 /dist
 package.json
+
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
