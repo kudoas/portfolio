@@ -1,4 +1,4 @@
-name: test
+name: ci
 on: pull_request
 jobs:
   build:
@@ -10,10 +10,9 @@ jobs:
         with:
           node-version: 18
           cache: "pnpm"
-      - name: Install dependencies
-        run: pnpm install
-      - name: Build
-        run: pnpm build
+      - run: pnpm install
+      - run: pnpm format:check
+      - run: pnpm build
       # TODO: Add tests
       # - name: Test
       #   run: pnpm test

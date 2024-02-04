@@ -8,7 +8,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint --ext .ts,.tsx 'src/**/**'",
-    "lint:fix": "eslint --fix --ext .ts,.tsx 'src/**/**'"
+    "prettier": "prettier --check 'src/**/**'",
+    "format": "eslint --fix --ext .ts,.tsx 'src/**/**' && prettier --write 'src/**/**'",
+    "format:check": "eslint --ext .ts,.tsx 'src/**/**' && prettier --check 'src/**/**'"
   },
   "author": "daichi",
   "license": "MIT",
