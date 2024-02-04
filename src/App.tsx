@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ThemeProvider as MaterialThemeProvider, StylesProvider } from "@material-ui/styles";
+import { ThemeProvider as MaterialThemeProvider, StylesProvider } from "@material-ui/core/styles";
 
 import { theme } from "./theme/theme";
 import { GlobalCSS, ResetCSS } from "./styles";
