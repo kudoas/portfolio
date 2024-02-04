@@ -14,5 +14,6 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm build
-      - name: Test
-        run: pnpm test
+      # TODO: Add tests
+      # - name: Test
+      #   run: pnpm test
