@@ -6,4 +6,5 @@ export default defineConfig({
     outDir: 'dist',
   },
   plugins: [react()],
+  optimizeDeps: { esbuildOptions: { define: { global: "globalThis" } } }
 });
