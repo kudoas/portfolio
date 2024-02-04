@@ -1,6 +1,3 @@
-// discussion: https://github.com/vitejs/vite/discussions/6316
-if (typeof window.global === "undefined") window.global = window;
-
 import React from "react";
 
 import { ThemeProvider as MaterialThemeProvider, StylesProvider } from "@material-ui/styles";
