@@ -5,10 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - run: corepack enable
+      - uses: actions/setup-node@v4
         with:
-          version: 8
-          run_install: true
+          node-version: 18
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
       - name: Build
         run: pnpm build
       - name: Test
