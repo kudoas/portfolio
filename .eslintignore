@@ -1,4 +1,5 @@
 src/assets/**
 src/types/**
-*.test.tsx
+
 *.js
+vite.config.ts

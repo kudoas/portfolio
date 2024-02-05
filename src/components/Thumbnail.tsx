@@ -3,8 +3,14 @@ import styled from "@emotion/styled";
 
 import { icon } from "../assets/index";
 
-export const Thumbnail: React.FCX = () => {
-  return <StyledImg src={icon} alt="icon" />;
+type Props = {
+  src?: string;
+};
+
+export const Thumbnail: React.FCX<Props> = (props) => {
+  const { src } = props;
+
+  return <StyledImg src={src ?? icon} alt="icon" />;
 };
 
 export const StyledImg = styled.img`

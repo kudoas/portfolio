@@ -19,7 +19,11 @@
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "semi": "error",
     "quotes": ["error", "double"],
-    "indent": ["error", 2, { "SwitchCase": 1 }]
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+
+    // from v17
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   },
   "env": {
     "browser": true,
