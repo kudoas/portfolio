@@ -1,22 +1,12 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
-import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
 
 import Section from "../styles/Section";
 import { StyledTitle } from "../components/Title";
 import Card from "../components/Card";
 import { blog, burgerBuilder, board, htmlTableCreator, slack, cookle, slimline } from "./../assets";
-
-const useStyles = makeStyles({
-  grid: {
-    textAlign: "center",
-  },
-  card: {
-    fontSize: "1.6rem",
-  },
-});
 
 const cardItems = [
   {
@@ -141,17 +131,15 @@ export const Works: React.FCX = ({ className }) => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
-  const classes = useStyles();
 
   return (
     <Section className={className + " " + "#works"} ref={ref} inView={inView}>
       <StyledTitle>Works</StyledTitle>
-      <Grid container spacing={3} alignItems="center" justify="center">
+      <Grid container spacing={3} alignItems="center">
         {cardItems.map((item) => {
           return (
             <Grid item xs={12} sm={6} md={4} key={item.title}>
               <Card
-                className={classes.card}
                 title={item.title}
                 image={item.image}
                 detail={item.detail}
