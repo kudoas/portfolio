@@ -2,11 +2,11 @@ import React from "react";
 import styled from "@emotion/styled";
 import { useInView } from "react-intersection-observer";
 
-import LocalMallIcon from "@material-ui/icons/LocalMall";
-import VpnKeyIcon from "@material-ui/icons/VpnKey";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import EmojiPeopleIcon from "@material-ui/icons/EmojiPeople";
-import SchoolIcon from "@material-ui/icons/School";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import SchoolIcon from "@mui/icons-material/School";
 
 import Section from "../styles/Section";
 import { StyledTitle } from "../components/Title";
