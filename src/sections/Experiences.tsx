@@ -86,7 +86,7 @@ const myExperiences = [
   },
 ];
 
-export const Expreience: FCX = ({ className }) => {
+export const Experience: FCX = ({ className }) => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
@@ -99,7 +99,7 @@ export const Expreience: FCX = ({ className }) => {
   );
 };
 
-export const StyledExpreience = styled(Expreience)`
+export const StyledExperience = styled(Experience)`
   .intern {
     text-align: center;
   }
