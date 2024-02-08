@@ -6,7 +6,7 @@ interface Props {
 }
 
 interface Profile {
-  item: string;
+  title: string;
   content: string;
 }
 
@@ -20,13 +20,13 @@ export const Table: FCX<Props> = ({ profiles }) => {
     >
       <TableBody>
         {profiles.map((p) => (
-          <TableRow key={p.item}>
+          <TableRow key={p.title}>
             <TableCell
               sx={{
                 fontSize: "1.5rem",
               }}
             >
-              {p.item}
+              {p.title}
             </TableCell>
             <TableCell
               sx={{

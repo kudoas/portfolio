@@ -1,4 +1,4 @@
-import { FCX } from "react";
+import { FCX, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 
@@ -8,31 +8,36 @@ import { StyledTitle } from "../components/Title";
 
 const skillLists = [
   {
-    item: "Python: Django, Flask, Pandas",
+    title: "Python: Django, Flask, Pandas",
     content: "Webアプリ, 競技プログラミング, 医療系データの解析",
   },
-  { item: "TypeScript: React.js, Node.js, Express.js", content: "Webアプリ、API" },
+  { title: "TypeScript: React.js, Node.js, Express.js", content: "Webアプリ、API" },
   {
-    item: "JavaScript: React.js, Node.js, Express.js, Gatsby.js",
+    title: "JavaScript: React.js, Node.js, Express.js, Gatsby.js",
     content: "Webアプリ、API",
   },
-  { item: "Go", content: "API開発" },
-  { item: "Google Apps Script", content: "slack bot開発：積読管理、記事レコメンド)" },
-  { item: "HTML5 ＆ CSS3", content: "フロントデザイン, Styled Component" },
-  { item: "MySQL, PostgresQL, MongoDB", content: "Webサービスのデータベース" },
-  { item: "Heroku, AWS S3, Netlify, Firebase", content: "インフラ" },
-  { item: "Googla Analytics", content: "モニタリング" },
+  { title: "Go", content: "API開発" },
+  { title: "HTML / CSS", content: "フロントデザイン, Styled Component" },
+  { title: "MySQL, PostgresQL, MongoDB", content: "Webサービスのデータベース" },
+  { title: "Heroku, AWS S3, Netlify, Firebase", content: "インフラ" },
+  { title: "Google Apps Script", content: "slack bot開発：積読管理、記事レコメンド)" },
+  { title: "Google Analytics", content: "モニタリング" },
 ];
 
 export const Skills: FCX = ({ className }) => {
+  const [skills, setSkills] = useState(skillLists);
   const { ref, inView } = useInView({
     threshold: 0,
   });
 
+  useEffect(() => {
+    setSkills(skillLists);
+  }, [skills]);
+
   return (
     <Section className={className + " " + "#skills"} ref={ref} inView={inView}>
       <StyledTitle>Skills</StyledTitle>
-      <Table profiles={skillLists} />
+      <Table profiles={skills} />
     </Section>
   );
 };
