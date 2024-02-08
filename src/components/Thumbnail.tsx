@@ -1,4 +1,4 @@
-import React from "react";
+import { FCX } from "react";
 import styled from "@emotion/styled";
 
 import { icon } from "../assets/index";
@@ -7,7 +7,7 @@ type Props = {
   src?: string;
 };
 
-export const Thumbnail: React.FCX<Props> = (props) => {
+export const Thumbnail: FCX<Props> = (props) => {
   const { src } = props;
 
   return <StyledImg src={src ?? icon} alt="icon" />;

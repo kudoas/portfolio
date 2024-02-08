@@ -1,4 +1,4 @@
-import React from "react";
+import { FCX } from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 import Grid from "@mui/material/Grid";
@@ -127,7 +127,7 @@ const cardItems = [
   },
 ];
 
-export const Works: React.FCX = ({ className }) => {
+export const Works: FCX = ({ className }) => {
   const { ref, inView } = useInView({
     threshold: 0,
   });

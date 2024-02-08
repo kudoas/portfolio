@@ -1,8 +1,7 @@
-import React from "react";
-
+import { FCX } from "react";
 import { Title } from "../components/Title";
 
-export const Links: React.FCX = () => {
+export const Links: FCX = () => {
   return (
     <section className="#link">
       <Title>Links</Title>

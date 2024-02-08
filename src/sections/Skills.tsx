@@ -1,4 +1,4 @@
-import React from "react";
+import { FCX } from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 
@@ -24,7 +24,7 @@ const skillLists = [
   { item: "Googla Analytics", content: "モニタリング" },
 ];
 
-export const Skills: React.FCX = ({ className }) => {
+export const Skills: FCX = ({ className }) => {
   const { ref, inView } = useInView({
     threshold: 0,
   });

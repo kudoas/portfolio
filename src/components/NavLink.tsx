@@ -1,4 +1,4 @@
-import React from "react";
+import { FCX } from "react";
 import { Link } from "react-scroll";
 import styled from "@emotion/styled";
 
@@ -7,7 +7,7 @@ type Props = {
   navList: string[];
 };
 
-export const NavLink: React.FCX<Props> = (props) => {
+export const NavLink: FCX<Props> = (props) => {
   const { className, children, offset = -40, navList } = props;
 
   return (

@@ -1,7 +1,7 @@
-import React from "react";
+import { FCX } from "react";
 import styled from "@emotion/styled";
 
-const Footer: React.FCX = ({ className }) => {
+const Footer: FCX = ({ className }) => {
   return <footer className={"#footer" + " " + className}>Copyright © 2024</footer>;
 };
 

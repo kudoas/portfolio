@@ -1,7 +1,7 @@
-import React from "react";
+import { FCX } from "react";
 import styled from "@emotion/styled";
 
-export const Title: React.FCX = (props) => {
+export const Title: FCX = (props) => {
   const { children, className } = props;
 
   return (

@@ -1,4 +1,4 @@
-import React from "react";
+import { FCX } from "react";
 import styled from "@emotion/styled";
 import { Card as MuiCard, Button, CardContent, CardMedia, CardActions } from "@mui/material";
 
@@ -13,7 +13,7 @@ type Props = Partial<{
   url: JSX.Element;
 }>;
 
-const Card: React.FCX<Props> = ({ className, title, image, detail, skills, repoLink, url }) => {
+const Card: FCX<Props> = ({ className, title, image, detail, skills, repoLink, url }) => {
   return (
     <MuiCard className={className}>
       <CardMedia className="CardMedia" image={image} title={title} />

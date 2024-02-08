@@ -1,8 +1,7 @@
-import React from "react";
-
+import { FCX } from "react";
 import { Title } from "../components/Title";
 
-export const Contact: React.FCX = ({ className }) => {
+export const Contact: FCX = ({ className }) => {
   return (
     <section className={className + " " + "#contact"}>
       <Title>Contact</Title>

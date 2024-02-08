@@ -1,4 +1,4 @@
-import React from "react";
+import { FCX } from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import styled from "@emotion/styled";
@@ -6,7 +6,7 @@ import styled from "@emotion/styled";
 import { StyledTimelineElement } from "./TimelineElement";
 import { Experiences } from "./interface";
 
-export const Timeline: React.FCX<Experiences> = ({ className, experieces }) => {
+export const Timeline: FCX<Experiences> = ({ className, experieces }) => {
   return (
     <VerticalTimeline className={className}>
       {experieces.map((ex) => {

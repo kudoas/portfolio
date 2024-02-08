@@ -1,9 +1,9 @@
-import React from "react";
+import { FCX } from "react";
 import styled from "@emotion/styled";
 
 import { Wave } from "../components/Wave";
 
-export const Top: React.FCX = ({ className }) => {
+export const Top: FCX = ({ className }) => {
   return (
     <section className={className + " " + "#top"}>
       {/* eslint-disable-next-line react/no-unescaped-entities */}

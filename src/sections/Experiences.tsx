@@ -1,4 +1,4 @@
-import React from "react";
+import { FCX } from "react";
 import styled from "@emotion/styled";
 import { useInView } from "react-intersection-observer";
 
@@ -18,7 +18,7 @@ const myExperiences = [
     icon: <LocalMallIcon />,
     date: "2020/11/16 - 2020/11/20",
     content:
-      "React.jsを使用したプロトタイプ作成、管理しやすいコンポーネントの設計、CI/CDの導入を経験、純粋なstyled-componentによるデザイニングを経験した。",
+      "jsを使用したプロトタイプ作成、管理しやすいコンポーネントの設計、CI/CDの導入を経験、純粋なstyled-componentによるデザイニングを経験した。",
     color: "rgb(33, 150, 243)",
     link: (
       <a href="https://kudolog.net/posts/yumemi-intern/">ブログ/ ゆめみのインターンに参加して</a>
@@ -86,7 +86,7 @@ const myExperiences = [
   },
 ];
 
-export const Expreience: React.FCX = ({ className }) => {
+export const Expreience: FCX = ({ className }) => {
   const { ref, inView } = useInView({
     threshold: 0,
   });

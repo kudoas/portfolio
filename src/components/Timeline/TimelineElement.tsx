@@ -1,11 +1,11 @@
-import React from "react";
+import { FCX } from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import styled from "@emotion/styled";
 
 import { Experience } from "./interface";
 
-export const TimelineElement: React.FCX<Experience> = ({
+export const TimelineElement: FCX<Experience> = ({
   className,
   title,
   icon,
