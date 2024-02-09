@@ -12,6 +12,10 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "typeRoots": ["src/types", "node_modules/@types"],
+    "paths": {
+      "@types": ["./src/types"],
+      "@data": ["./src/data"],
+    },
   },
   "exclude": ["node_modules", "dist", "vite.config.ts"],
 }
