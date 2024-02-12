@@ -1,11 +1,11 @@
 import { FC } from "react";
-import { StyledHeader } from "../sections/Header";
-import { StyledTop } from "../sections/Top";
-import { StyledAbout } from "../sections/About";
-import { StyledExperience } from "../sections/Experiences";
-import { StyledWorks } from "../sections/Works";
-import { StyledSkills } from "../sections/Skills";
-import { StyledFooter } from "../sections/Footer";
+import { StyledHeader } from "../components/Header";
+import { StyledTop } from "../components/Top";
+import { StyledAbout } from "../components/About";
+import { StyledExperience } from "../components/Experiences";
+import { StyledWorks } from "../components/Works";
+import { StyledSkills } from "../components/Skills";
+import { StyledFooter } from "../components/Footer";
 
 export const Home: FC = () => {
   return (

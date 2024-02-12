@@ -4,9 +4,9 @@ import styled from "@emotion/styled";
 import Grid from "@mui/material/Grid";
 
 import Section from "../styles/Section";
-import { StyledTitle } from "../components/Title";
-import Card from "../components/Card";
-import { blog, burgerBuilder, board, htmlTableCreator, slack, cookle, slimline } from "./../assets";
+import { StyledTitle } from "./Title";
+import Card from "./Card";
+import { blog, burgerBuilder, board, htmlTableCreator, slack, cookle, slimline } from "../assets";
 
 const cardItems = [
   {

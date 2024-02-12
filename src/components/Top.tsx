@@ -1,7 +1,7 @@
 import { FCX } from "react";
 import styled from "@emotion/styled";
 
-import { Wave } from "../components/Wave";
+import { Wave } from "./Wave";
 
 export const Top: FCX = ({ className }) => {
   return (

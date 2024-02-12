@@ -9,8 +9,8 @@ import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import SchoolIcon from "@mui/icons-material/School";
 
 import Section from "../styles/Section";
-import { StyledTitle } from "../components/Title";
-import { StyledTimeline } from "../components/Timeline/Timeline";
+import { StyledTitle } from "./Title";
+import { StyledTimeline } from "./Timeline/Timeline";
 
 const myExperiences = [
   {

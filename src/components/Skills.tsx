@@ -3,8 +3,8 @@ import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 
 import Section from "../styles/Section";
-import { Table } from "../components/Table";
-import { StyledTitle } from "../components/Title";
+import { Table } from "./Table";
+import { StyledTitle } from "./Title";
 import { skills as data } from "@data";
 import { Skill } from "@types";
 

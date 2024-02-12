@@ -5,8 +5,8 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 import { atcoder } from "../assets/index";
-import { StyledTitle } from "../components/Title";
-import { Thumbnail } from "../components/Thumbnail";
+import { StyledTitle } from "./Title";
+import { Thumbnail } from "./Thumbnail";
 import Section from "../styles/Section";
 
 const links = [

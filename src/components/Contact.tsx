@@ -1,5 +1,5 @@
 import { FCX } from "react";
-import { Title } from "../components/Title";
+import { Title } from "./Title";
 
 export const Contact: FCX = ({ className }) => {
   return (
