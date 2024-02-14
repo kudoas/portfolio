@@ -2,47 +2,37 @@ import { FCX } from "react";
 import styled from "@emotion/styled";
 import { Card as MuiCard, Button, CardContent, CardMedia, CardActions } from "@mui/material";
 
-type Props = Partial<{
+type Props = {
   title: string;
   image: string;
   detail: string;
   skills: string[];
-  // eslint-disable-next-line no-undef
-  repoLink: JSX.Element;
-  // eslint-disable-next-line no-undef
-  url: JSX.Element;
-}>;
-
-const Card: FCX<Props> = ({ className, title, image, detail, skills, repoLink, url }) => {
-  return (
-    <MuiCard className={className}>
-      <CardMedia className="CardMedia" image={image} title={title} />
-      <CardContent className="CardContent">
-        <h3>{title}</h3>
-        <p>{detail}</p>
-        <ul>
-          {skills!.map((s, i) => (
-            <li className="skill" key={s + i}>
-              <span>{s}</span>
-            </li>
-          ))}
-        </ul>
-      </CardContent>
-      <CardActions>
-        {repoLink ? (
-          <Button size="small" color="primary">
-            {repoLink}
-          </Button>
-        ) : null}
-        {url ? (
-          <Button size="small" color="primary">
-            {url}
-          </Button>
-        ) : null}
-      </CardActions>
-    </MuiCard>
-  );
+  repoLink: string;
 };
+
+const Card: FCX<Props> = ({ className, title, image, detail, skills, repoLink }) => (
+  <MuiCard className={className}>
+    <CardMedia className="CardMedia" image={image} title={title} />
+    <CardContent className="CardContent">
+      <h3>{title}</h3>
+      <p>{detail}</p>
+      <ul>
+        {skills.map((s, i) => (
+          <li className="skill" key={s + i}>
+            <span>{s}</span>
+          </li>
+        ))}
+      </ul>
+    </CardContent>
+    <CardActions>
+      <Button size="small" color="primary">
+        <a href={repoLink} target="_blank" rel="noreferrer">
+          GitHub Link
+        </a>
+      </Button>
+    </CardActions>
+  </MuiCard>
+);
 
 const StyledCard = styled(Card)`
   height: 100%;
