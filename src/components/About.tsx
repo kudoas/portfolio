@@ -3,8 +3,8 @@ import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import ArticleIcon from "@mui/icons-material/Article";
 
-import { atcoder } from "../assets/index";
 import { StyledTitle } from "./Title";
 import { Thumbnail } from "./Thumbnail";
 import Section from "../styles/Section";
@@ -13,8 +13,8 @@ const links = [
   {
     item: "Twitter",
     content: (
-      <a href="https://twitter.com/kudoadd" key="1">
-        <TwitterIcon style={{ fontSize: "40px" }} />
+      <a href="https://twitter.com/_da1kong" key="1">
+        <TwitterIcon style={{ fontSize: "40px" }} sx={{ margin: "10px" }} />
       </a>
     ),
   },
@@ -22,23 +22,23 @@ const links = [
     item: "GitHub",
     content: (
       <a href="https://github.com/Kudoas" key="2">
-        <GitHubIcon style={{ fontSize: "40px" }} />
+        <GitHubIcon style={{ fontSize: "40px" }} sx={{ margin: "10px" }} />
+      </a>
+    ),
+  },
+  {
+    item: "Tech Blog",
+    content: (
+      <a href="https://blog.da1chi.net" key="3">
+        <ArticleIcon style={{ fontSize: "40px" }} sx={{ margin: "10px" }} />
       </a>
     ),
   },
   {
     item: "Hatena Blog",
     content: (
-      <a href="https://kudolog.net/" key="4">
-        <i className="fa-hatena" style={{ fontSize: "35px" }}></i>
-      </a>
-    ),
-  },
-  {
-    item: "AtCoder",
-    content: (
-      <a href="https://atcoder.jp/users/kudoa" key="3">
-        <img src={atcoder} alt="atcoder" style={{ width: "40px" }} />
+      <a href="https://kudoa.hatenablog.com" key="4">
+        <i className="fa-hatena" style={{ fontSize: "40px" }}></i>
       </a>
     ),
   },
@@ -76,7 +76,7 @@ export const StyledAbout = styled(About)`
   div {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 50%;
     margin: 0 auto 0;
   }
 `;
