@@ -2,8 +2,6 @@ import { FCX } from "react";
 import { Link } from "react-scroll";
 import styled from "@emotion/styled";
 
-// import { NavLink } from "../components/NavLink";
-
 export const Header: FCX = ({ className }) => {
   return (
     <header className={className}>
