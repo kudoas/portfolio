@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { StyledHeader } from "../components/Header";
-import { StyledTop } from "../components/Top";
 import { StyledAbout } from "../components/About";
 import { StyledExperience } from "../components/Experiences";
 import { StyledWorks } from "../components/Works";
@@ -11,7 +10,6 @@ export const Home: FC = () => {
   return (
     <>
       <StyledHeader />
-      <StyledTop />
       <StyledAbout />
       <StyledExperience />
       <StyledWorks />
