@@ -57,7 +57,7 @@ export const GlobalCSS = () => (
             text-decoration: none;
           }
           section {
-            width: 80%;
+            width: 60%;
             margin: 0 auto;
           }
         }

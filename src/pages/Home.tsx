@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { StyledHeader } from "../components/Header";
 import { StyledAbout } from "../components/About";
-import { StyledExperience } from "../components/Experiences";
+import { StyledCareer } from "../components/Career";
 import { StyledWorks } from "../components/Works";
 import { StyledSkills } from "../components/Skills";
 import { StyledFooter } from "../components/Footer";
@@ -12,7 +12,7 @@ export const Home: FC = () => {
       <div className="#top"></div>
       <StyledHeader />
       <StyledAbout />
-      <StyledExperience />
+      <StyledCareer />
       <StyledWorks />
       <StyledSkills />
       <StyledFooter />
