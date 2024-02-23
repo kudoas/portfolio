@@ -9,6 +9,7 @@ import { StyledFooter } from "../components/Footer";
 export const Home: FC = () => {
   return (
     <>
+      <div className="#top"></div>
       <StyledHeader />
       <StyledAbout />
       <StyledExperience />
