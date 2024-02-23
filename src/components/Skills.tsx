@@ -2,7 +2,7 @@ import { FCX, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 
-import Section from "../styles/Section";
+import Section from "./Section";
 import { Table } from "./Table";
 import { StyledTitle } from "./Title";
 import { skills as data } from "@data";

@@ -8,7 +8,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import SchoolIcon from "@mui/icons-material/School";
 
-import Section from "../styles/Section";
+import Section from "./Section";
 import { StyledTitle } from "./Title";
 import { StyledTimeline } from "./Timeline/Timeline";
 

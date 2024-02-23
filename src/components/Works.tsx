@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import Grid from "@mui/material/Grid";
 
 import { Work } from "@types";
-import Section from "../styles/Section";
+import Section from "./Section";
 import { StyledTitle } from "./Title";
 import Card from "./Card";
 

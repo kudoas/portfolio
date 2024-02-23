@@ -7,7 +7,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 
 import { StyledTitle } from "./Title";
 import { Thumbnail } from "./Thumbnail";
-import Section from "../styles/Section";
+import Section from "./Section";
 
 const links = [
   {
