@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { ThemeProvider as MaterialThemeProvider } from "@mui/material";
 import { StylesProvider } from "@mui/styles";
-import { Analytics } from "@vercel/analytics/react";
+import { VercelAnalytics } from "./observable/vercel";
 
 import { theme } from "./theme/theme";
 import { GlobalCSS, ResetCSS } from "./styles";
@@ -17,7 +17,7 @@ const App: FC = () => {
           <Home />
         </MaterialThemeProvider>
       </StylesProvider>
-      <Analytics />
+      <VercelAnalytics />
     </>
   );
 };
