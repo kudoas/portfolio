@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 
 import Section from "./Section";
-import { Table } from "./Table";
 import { StyledTitle } from "./Title";
 import { skills as data } from "@data";
 import { Skill } from "@types";
@@ -21,14 +20,28 @@ export const Skills: FCX = ({ className }) => {
   return (
     <Section className={className + " " + "#skills"} ref={ref} inView={inView}>
       <StyledTitle>Skills</StyledTitle>
-      <Table skills={skills} />
+      <table>
+        <tbody>
+          {skills.map((skill) => (
+            <tr key={skill.name}>
+              <h3>{skill.name}</h3>
+              <td>{skill.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </Section>
   );
 };
 
 export const StyledSkills = styled(Skills)`
-  table {
-    text-align: left;
-    margin: 0 auto;
+  h3 {
+    margin: 10px 0;
+  }
+  td {
+    padding: 20px 0;
+  }
+  td:nth-of-type(1) {
+    width: 40%;
   }
 `;

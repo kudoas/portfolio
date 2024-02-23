@@ -4,12 +4,12 @@ export const skills = [
     description: "TypeScript, JavaScript, Ruby, Python, Go",
   },
   {
-    name: "Framework",
+    name: "Framework / Library",
     description: "Rails, Angular, React",
   },
   {
     name: "Infrastructure",
-    description: "AWS, Docker, Vercel",
+    description: "AWS, Docker, Vercel, Terraform",
   },
   {
     name: "CI / CD",
