@@ -18,8 +18,8 @@ export const Header: FCX = ({ className }) => {
             </Link>
           </li>
           <li>
-            <Link to="#experiences" smooth={true} offset={-40} duration={500}>
-              Experineces
+            <Link to="#career" smooth={true} offset={-40} duration={500}>
+              Career
             </Link>
           </li>
           <li>
