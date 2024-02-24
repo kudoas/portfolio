@@ -7,7 +7,7 @@ import { StyledTitle } from "./Title";
 
 const careers = [
   {
-    title: "Classi, Inc. Software Engineer",
+    title: "Classi Corp. Software Engineer",
     date: "2022/04 -",
   },
   {
