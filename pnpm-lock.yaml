@@ -38,12 +38,6 @@ dependencies:
   '@vercel/speed-insights':
     specifier: ^1.0.10
     version: 1.0.10(react@18.2.0)
-  gridjs:
-    specifier: ^6.1.1
-    version: 6.1.1
-  gridjs-react:
-    specifier: ^6.1.1
-    version: 6.1.1(gridjs@6.1.1)(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -2538,22 +2532,6 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /gridjs-react@6.1.1(gridjs@6.1.1)(react@18.2.0):
-    resolution: {integrity: sha512-MOu/t4naXR6vIeLdcE+vUFtyUcYuRn75sThJnShlMntQcrVCSKSBApmNWU1MzLuNrqOH5sbDImqk7pIXYumKxA==}
-    peerDependencies:
-      gridjs: ^6.1.0
-      react: '>=18.x'
-    dependencies:
-      gridjs: 6.1.1
-      react: 18.2.0
-    dev: false
-
-  /gridjs@6.1.1:
-    resolution: {integrity: sha512-nFwbz1pGxe4h3dC7xDZaazN5aAg6Mhnu4J790Vj/D+mvJAtT3FEYXULiPAyrYB5BhukAZixvKYed7p7IhmdwXQ==}
-    dependencies:
-      preact: 10.19.5
-    dev: false
-
   /happy-dom@13.5.0:
     resolution: {integrity: sha512-0XWOSvyc03Z2Ye+VGP5pN6fpwgKMy3a2d09RuGRqAR4TEaW0SCtw3upt7dLoKaYBFUO+JeuDJh366aDBat3OVQ==}
     engines: {node: '>=16.0.0'}
@@ -3315,10 +3293,6 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
-
-  /preact@10.19.5:
-    resolution: {integrity: sha512-OPELkDmSVbKjbFqF9tgvOowiiQ9TmsJljIzXRyNE8nGiis94pwv1siF78rQkAP1Q1738Ce6pellRg/Ns/CtHqQ==}
-    dev: false
 
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
