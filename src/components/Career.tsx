@@ -33,7 +33,7 @@ const careers = [
     link: <a href="https://speakerdeck.com/kudoas/cookle">プレゼン資料/ Cookle</a>,
   },
   {
-    title: "VOYAGE GROUP Intern Treasure",
+    title: "VOYAGE GROUP Intern",
     date: "2020/08",
     content:
       "エンドポイント・データベース設計, WebRTC を使用したフロントエンド, インフラの事前講義と、学生4人＋サポーター3人での2週間のチーム開発の約1か月のインターン。UI/UX賞・アイデア賞・グランプリを受賞した。",
