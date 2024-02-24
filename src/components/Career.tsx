@@ -16,7 +16,7 @@ const careers = [
   },
   {
     title: "YUMEMI Intern",
-    date: "2020/11/16 - 2020/11/20",
+    date: "2020/11",
     content:
       "jsを使用したプロトタイプ作成、管理しやすいコンポーネントの設計、CI/CDの導入、styled-component によるデザイニングを経験した。",
     link: (
@@ -27,7 +27,7 @@ const careers = [
   },
   {
     title: "Rakuten Intern",
-    date: "2020/09/01 - 2020/09/11",
+    date: "2020/09",
     content:
       "6人1チームで「オンラインで人と人を繋ぐ」というテーマのもと新規プロトタイプ開発インターン。サービスのアイデアの構築、言語や使用するサービスの選定、システム・DB・API設計、開発とQAまで2週間で行った",
     link: <a href="https://speakerdeck.com/kudoas/cookle">プレゼン資料/ Cookle</a>,
