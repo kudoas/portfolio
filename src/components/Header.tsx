@@ -52,7 +52,7 @@ export const StyledHeader = styled(Header)`
   position: sticky;
   z-index: 1;
   top: 0;
-  font-size: 18px;
+  font-size: 2rem;
   margin: 0;
   background-color: #fff;
   nav {
@@ -61,6 +61,10 @@ export const StyledHeader = styled(Header)`
       li {
         display: inline-block;
         padding: 0 30px;
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+          padding: 0 10px;
+        }
         a {
           display: inline-block;
           position: relative;
