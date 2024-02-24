@@ -57,18 +57,20 @@ export const Career: FCX = ({ className }) => {
         {careers.map((career, i) => (
           <div key={i}>
             <table>
-              <tr>
-                <td>
-                  <div className="date">{career.date}</div>
-                  <h3>{career.title}</h3>
-                </td>
-                {career.content && (
+              <tbody>
+                <tr>
                   <td>
-                    <div>{career.content}</div>
-                    {career.link}
+                    <div className="date">{career.date}</div>
+                    <h3>{career.title}</h3>
                   </td>
-                )}
-              </tr>
+                  {career.content && (
+                    <td>
+                      <div>{career.content}</div>
+                      {career.link}
+                    </td>
+                  )}
+                </tr>
+              </tbody>
             </table>
           </div>
         ))}
