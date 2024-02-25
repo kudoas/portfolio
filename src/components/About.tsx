@@ -51,7 +51,7 @@ export const About: FCX = ({ className }) => {
 
   return (
     <Section inView={inView} className={className + " " + "#about"} ref={ref}>
-      <StyledTitle>About</StyledTitle>
+      <StyledTitle>About Me</StyledTitle>
       <div>
         <Thumbnail />
       </div>

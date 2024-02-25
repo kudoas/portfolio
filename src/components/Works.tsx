@@ -21,8 +21,8 @@ export const Works: FCX = ({ className }) => {
   });
 
   return (
-    <Section className={className + " " + "#works"} ref={ref} inView={inView}>
-      <StyledTitle>Works</StyledTitle>
+    <Section className={className + " " + "#work"} ref={ref} inView={inView}>
+      <StyledTitle>Work</StyledTitle>
       <Grid container spacing={3} alignItems="center">
         {works.map((work) => {
           return (

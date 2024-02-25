@@ -18,8 +18,8 @@ export const Skills: FCX = ({ className }) => {
   }, [skills]);
 
   return (
-    <Section className={className + " " + "#skills"} ref={ref} inView={inView}>
-      <StyledTitle>Skills</StyledTitle>
+    <Section className={className + " " + "#skill"} ref={ref} inView={inView}>
+      <StyledTitle>Skill</StyledTitle>
       <table>
         <tbody>
           {skills.map((skill) => (
