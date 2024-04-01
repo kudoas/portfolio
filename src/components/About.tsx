@@ -13,7 +13,7 @@ const links = [
   {
     item: "Twitter",
     content: (
-      <a href="https://twitter.com/_da1kong" key="1">
+      <a href="https://twitter.com/da1chi24" key="1">
         <TwitterIcon style={{ fontSize: "40px" }} sx={{ margin: "10px" }} />
       </a>
     ),
@@ -21,7 +21,7 @@ const links = [
   {
     item: "GitHub",
     content: (
-      <a href="https://github.com/Kudoas" key="2">
+      <a href="https://github.com/kudoas" key="2">
         <GitHubIcon style={{ fontSize: "40px" }} sx={{ margin: "10px" }} />
       </a>
     ),
@@ -37,7 +37,7 @@ const links = [
   {
     item: "Hatena Blog",
     content: (
-      <a href="https://kudoa.hatenablog.com" key="4">
+      <a href="https://da1chi24.hatenablog.com/" key="4">
         <i className="fa-hatena" style={{ fontSize: "40px" }}></i>
       </a>
     ),
