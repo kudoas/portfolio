@@ -37,7 +37,7 @@ const links = [
   {
     item: "Hatena Blog",
     content: (
-      <a href="https://da1chi24.hatenablog.com/" key="4">
+      <a href="https://da1chi.hatenablog.jp/" key="4">
         <i className="fa-hatena" style={{ fontSize: "40px" }}></i>
       </a>
     ),
