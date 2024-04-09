@@ -21,7 +21,7 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@mui/styles": "^5.15.15",
-    "@types/react": "^18.2.74",
+    "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
     "@types/react-scroll": "^1.8.10",
     "@vercel/analytics": "^1.2.2",
