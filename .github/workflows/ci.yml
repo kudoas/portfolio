@@ -6,14 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
-      - run: corepack enable
-      - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
-        with:
-          node-version: 18
-          cache: "pnpm"
-      - run: pnpm install
-      - run: pnpm format:check
-      - run: pnpm build
-      # TODO: Add tests
-      # - name: Test
-      #   run: pnpm test
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install --frozen-lockfile
+      - run: bun run format:check
+      - run: bun run build
