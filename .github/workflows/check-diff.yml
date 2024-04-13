@@ -15,10 +15,10 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
         with:
           fetch-depth: 0
-      - uses: aquaproj/aqua-installer@v3.0.0
+      - uses: aquaproj/aqua-installer@4551ec64e21bf0f557c2525135ff0bd2cba40ec7 # v3.0.0
         with:
           aqua_version: v2.25.2
       - name: Setup for lockfile diff
@@ -26,7 +26,7 @@ jobs:
           git config core.attributesFile .gitattributes && echo "bun.lockb diff=lockb" >> .gitattributes
           git config diff.lockb.textconv bun
           git config diff.lockb.binary true
-      - uses: oven-sh/setup-bun@v1
+      - uses: oven-sh/setup-bun@8f24390df009a496891208e5e36b8a1de1f45135 # v1
       - name: Check diff in bun lockfile
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
