@@ -6,6 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+        with:
+          # Fine-grained PAT with contents:write and workflows:write scopes
+          token: ${{ secrets.WORKFLOW_TOKEN }}
       - uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2
       - run: bun install --frozen-lockfile
       - run: bun run format:check
