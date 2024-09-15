@@ -32,3 +32,4 @@ jobs:
           delete-branch: true
           title: "chore: Update github actions comment"
           body: "refs. #${{ github.event.number }}"
+          token: ${{ secrets.WORKFLOW_TOKEN }}
