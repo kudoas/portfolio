@@ -15,7 +15,7 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           fetch-depth: 0
           # Fine-grained PAT with contents:write and workflows:write scopes
@@ -28,7 +28,7 @@ jobs:
           git config core.attributesFile .gitattributes && echo "bun.lockb diff=lockb" >> .gitattributes
           git config diff.lockb.textconv bun
           git config diff.lockb.binary true
-      - uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2
+      - uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2.0.1
       - name: Check diff in bun lockfile
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
