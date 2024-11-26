@@ -47,7 +47,7 @@
     "prettier": "3.4.1",
     "typescript": "5.7.2",
     "vite": "5.4.11",
-    "vitest": "2.1.5"
+    "vitest": "2.1.6"
   },
   "type": "module"
 }
