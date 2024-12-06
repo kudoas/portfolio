@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "6.6.3",
-    "@testing-library/react": "16.0.1",
+    "@testing-library/react": "16.1.0",
     "@types/enzyme": "3.10.18",
     "@types/enzyme-adapter-react-16": "1.0.9",
     "@typescript-eslint/eslint-plugin": "8.17.0",
