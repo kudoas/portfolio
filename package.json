@@ -21,7 +21,7 @@
     "@mui/icons-material": "6.2.1",
     "@mui/material": "6.2.1",
     "@mui/styles": "6.2.1",
-    "@types/react": "19.0.1",
+    "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",
     "@types/react-scroll": "1.8.10",
     "@vercel/analytics": "1.4.1",
