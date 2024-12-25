@@ -7,10 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "eslint --ext .ts,.tsx 'src/**/**'",
     "prettier": "prettier --check 'src/**/**'",
-    "format": "eslint --fix --ext .ts,.tsx 'src/**/**' && prettier --write 'src/**/**'",
-    "format:check": "eslint --ext .ts,.tsx 'src/**/**' && prettier --check 'src/**/**'"
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
@@ -28,9 +26,17 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.0.6",
+    "@angular-eslint/builder": "19.0.2",
+    "@angular-eslint/eslint-plugin": "19.0.2",
+    "@angular-eslint/eslint-plugin-template": "19.0.2",
+    "@angular-eslint/schematics": "19.0.2",
+    "@angular-eslint/template-parser": "19.0.2",
     "@angular/cli": "^19.0.6",
     "@angular/compiler-cli": "^19.0.0",
     "@types/jasmine": "~5.1.0",
+    "@typescript-eslint/eslint-plugin": "8.18.2",
+    "@typescript-eslint/parser": "8.18.2",
+    "eslint": "8.57.0",
     "jasmine-core": "~5.4.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
