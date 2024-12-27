@@ -12,9 +12,10 @@ export default defineConfig({
     setupFiles: ['src/setup-vitest.ts'],
     include: ['src/**/*.spec.ts'],
     browser: {
-      enabled: true,
       name: 'chrome',
+      enabled: true,
       headless: isCI,
+      provider: 'webdriverio',
     },
   },
 });
