@@ -1,6 +1,9 @@
 name: CI
 on: pull_request
 
+env:
+  CI: true
+
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -10,3 +13,4 @@ jobs:
       - run: bun install --frozen-lockfile
       - run: bun lint
       - run: bun run build
+      - run: bun test
