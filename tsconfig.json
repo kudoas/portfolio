@@ -1,6 +1,11 @@
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
+  "references": [
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
@@ -16,8 +21,7 @@
     "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
-    "module": "ES2022",
-    "types": ["vitest/globals"]
+    "module": "ES2022"
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

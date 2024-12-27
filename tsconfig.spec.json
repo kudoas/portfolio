@@ -1,9 +1,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/spec"
-    // "types": ["vitest/globals"] <- なぜか spec で型エラーになるので、tsconfig.json で設定している
+    "composite": true,
+    "strict": true,
+    "outDir": "./out-tsc/spec",
+    "types": ["vitest/globals"]
   },
   "files": ["src/setup-vitest.ts"],
-  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
+  "include": ["src/**/*.spec.ts", "src/**/*.d.ts", "src/**/*.ts"]
 }
