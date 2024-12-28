@@ -8,7 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "vitest",
-    "prettier": "prettier --check 'src/**/**'",
+    "format:check": "prettier --check 'src/**/**'",
+    "format": "prettier --write 'src/**/**'",
     "lint": "ng lint"
   },
   "private": true,
@@ -41,6 +42,7 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^9.17.0",
     "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.6.3",
     "vitest": "^2.1.8",
