@@ -3,7 +3,7 @@ name: Check diff in bun lockfile
 on:
   push:
     paths:
-      - "bun.lockb"
+      - 'bun.lockb'
     branches-ignore:
       - main
 
@@ -12,7 +12,7 @@ jobs:
     name: diff check bun lockfile
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       pull-requests: write
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2

@@ -1,22 +1,21 @@
 /// <reference types="vitest" />
-import path from "path";
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+
+import { defineConfig } from 'vite';
+import angular from '@analogjs/vite-plugin-angular';
+
+const isCI = !!process.env['CI'];
 
 export default defineConfig({
-  build: {
-    outDir: "dist",
-  },
-  plugins: [react()],
-  resolve: {
-    alias: {
-      "@data": `${path.resolve(__dirname, "src/data")}`,
-      "@types": `${path.resolve(__dirname, "src/types")}`,
-    },
-  },
+  plugins: [angular({ tsconfig: 'tsconfig.spec.json' })],
   test: {
     globals: true,
-    environment: "happy-dom",
-    setupFiles: ["/src/setup.ts"],
+    setupFiles: ['src/setup-vitest.ts'],
+    include: ['src/**/*.spec.ts'],
+    browser: {
+      name: 'chrome',
+      enabled: true,
+      headless: isCI,
+      provider: 'webdriverio', // https://github.com/vitest-dev/vitest/issues/6804
+    },
   },
 });

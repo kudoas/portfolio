@@ -2,4 +2,3 @@ src/assets/**
 src/types/**
 
 *.js
-vite.config.ts

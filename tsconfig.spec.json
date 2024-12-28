@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "strict": true,
+    "outDir": "./out-tsc/spec",
+    "types": ["vitest/globals"]
+  },
+  "files": ["src/setup-vitest.ts"],
+  "include": ["src/**/*.spec.ts", "src/**/*.d.ts", "src/**/*.ts"]
+}

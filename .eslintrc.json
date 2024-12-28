@@ -1,32 +1,41 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
-  "plugins": ["@typescript-eslint"],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "sourceType": "module",
-    "project": "./tsconfig.json"
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ]
+      }
     },
-    "linkComponents": ["Hyperlink", { "name": "Link", "linkAttribute": "to" }]
-  },
-  "rules": {
-    "no-unused-vars": "off",
-    "react/prop-types": "off",
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-unnecessary-type-assertion": "error",
-    "semi": "error",
-    "quotes": ["error", "double"],
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-
-    // from v17
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
-  },
-  "env": {
-    "browser": true,
-    "es6": true
-  }
+    {
+      "files": ["*.html"],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended",
+        "plugin:@angular-eslint/template/accessibility"
+      ],
+      "rules": {}
+    }
+  ]
 }
