@@ -10,7 +10,7 @@ export default defineConfig({
   test: {
     globals: true,
     setupFiles: ['src/setup-vitest.ts'],
-    include: ['src/**/*.spec.ts', '@angular/cdk/testing/testbed'],
+    include: ['src/**/*.spec.ts'],
     browser: {
       name: 'chrome',
       enabled: true,
