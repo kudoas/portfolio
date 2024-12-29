@@ -18,7 +18,7 @@ import { Link } from './types';
               alt="icon"
               class="w-52 aspect-square rounded-full border border-solid border-gray-300"
             />
-            <p class="mt-4 text-lg font-bold text-center">da1chi<br />(Daichi Kudo)</p>
+            <p class="md:mb-0 mt-4 mb-1 text-lg font-bold text-center">da1chi<br />(Daichi Kudo)</p>
           </div>
           <app-profile-links [links]="links" />
         </div>
