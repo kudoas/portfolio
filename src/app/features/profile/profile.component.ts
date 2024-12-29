@@ -12,15 +12,13 @@ import { Link } from './types';
           About Me
         </h1>
         <div class="flex flex-col items-center md:flex-row justify-center">
-          <div class="content-around text-center">
-            <div class="inline-block">
-              <img
-                src="icon.png"
-                alt="icon"
-                class="max-w-max w-52 aspect-square rounded-full border border-solid border-gray-300"
-              />
-            </div>
-            <p class="my-auto font-bold text-lg">da1chi<br />(Daichi Kudo)</p>
+          <div class="flex flex-col items-center min-w-[220px] min-h-[208px]">
+            <img
+              src="icon.png"
+              alt="icon"
+              class="w-52 aspect-square rounded-full border border-solid border-gray-300"
+            />
+            <p class="mt-4 text-lg font-bold text-center">da1chi<br />(Daichi Kudo)</p>
           </div>
           <app-profile-links [links]="links" />
         </div>
