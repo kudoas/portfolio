@@ -5,7 +5,28 @@ import { Link } from './types';
 @Component({
   selector: 'app-profile',
   imports: [LinksComponent],
-  templateUrl: './profile.component.html',
+  template: `
+    <main class="md:mx-40 font-mono">
+      <section>
+        <h1 class="text-center mt-10 mb-5 font-bold text-3xl tracking-wide whitespace-nowrap">
+          About Me
+        </h1>
+        <div class="flex flex-col items-center md:flex-row justify-center">
+          <div class="content-around text-center">
+            <div class="inline-block">
+              <img
+                src="icon.png"
+                alt="icon"
+                class="max-w-max w-52 aspect-square rounded-full border border-solid border-gray-300"
+              />
+            </div>
+            <p class="my-auto font-bold text-lg">da1chi<br />(Daichi Kudo)</p>
+          </div>
+          <app-profile-links [links]="links" />
+        </div>
+      </section>
+    </main>
+  `,
 })
 export class ProfileComponent {
   readonly links: Link[] = [

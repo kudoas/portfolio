@@ -4,7 +4,18 @@ import { Link } from '../types';
 @Component({
   selector: 'app-profile-links',
   imports: [],
-  templateUrl: './links.component.html',
+  template: `
+    <div class="mb-8 mt-4 flex flex-col md:ml-20">
+      @for (link of links(); track link.label) {
+        <dl class="mt-2 flex text-gray md:mx-0 md:mt-4">
+          <dt class="w-40 text-lg font-bold">{{ link.label }}</dt>
+          <dd>
+            <a [href]="link.url" class="cursor-pointer underline">{{ link.id }}</a>
+          </dd>
+        </dl>
+      }
+    </div>
+  `,
 })
 export class LinksComponent {
   links = input.required<Link[]>();
