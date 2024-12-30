@@ -4,15 +4,6 @@ import { lastValueFrom } from 'rxjs';
 
 import { environment } from '../../../environments/environment.development';
 
-type ZennResponse = {
-  items: {
-    title: string;
-    contentSnippet: string;
-    link: string;
-    isoDate: string;
-  }[];
-};
-
 export function provideProfileUsecase(instance?: ProfileUsecase): Provider[] {
   return [
     {
