@@ -1,0 +1,10 @@
+{
+  "/api/zenn/articles": {
+    "target": "https://zenn.dev",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api/zenn/articles": "/api/articles"
+    }
+  }
+}

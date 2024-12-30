@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { LinksComponent } from './links/links.component';
 import { Link } from './types';
+import { ProfileUsecase, provideProfileUsecase } from './usecase';
+import { provideProfileState } from './state';
 
 @Component({
   selector: 'app-profile',
@@ -25,8 +27,11 @@ import { Link } from './types';
       </section>
     </main>
   `,
+  providers: [provideProfileUsecase(), provideProfileState()],
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit {
+  readonly #usecase = inject(ProfileUsecase);
+
   readonly links: Link[] = [
     { label: 'GitHub', id: 'kudoas', url: `https://github.com/kudoas` },
     { label: 'X (Twitter)', id: 'da1chi24', url: 'https://x.com/da1chi24' },
@@ -35,4 +40,8 @@ export class ProfileComponent {
     { label: 'Hatena Blog', id: '/var/log/da1', url: 'https://da1chi.hatenablog.jp/' },
     { label: 'Consence', id: '液溜まり', url: 'https://scrapbox.io/da1chi-tech/' },
   ];
+
+  ngOnInit(): void {
+    this.#usecase.getArticles();
+  }
 }
