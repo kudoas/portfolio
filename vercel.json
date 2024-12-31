@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/api/zenn/:path*",
+      "destination": "https://zenn.dev/api/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/zenn/:path*",
+      "headers": [
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "1"
+        }
+      ]
+    }
+  ]
+}
