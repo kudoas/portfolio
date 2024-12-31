@@ -1,7 +1,7 @@
-export type Link = {
+export type SocialLink = {
   label: string;
   url: string;
-  id: string;
+  name: string;
 };
 
 export type Article = {

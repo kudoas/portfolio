@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { LinksComponent } from './links/links.component';
-import { Link } from './types';
+import { SocialLink } from './types';
 import { ProfileUsecase, provideProfileUsecase } from './usecase';
 import { provideProfileState } from './state';
 
@@ -22,7 +22,7 @@ import { provideProfileState } from './state';
             />
             <p class="md:mb-0 mt-4 mb-1 text-lg font-bold text-center">da1chi<br />(Daichi Kudo)</p>
           </div>
-          <app-profile-links [links]="links" />
+          <app-profile-links [links]="socialLinks" />
         </div>
       </section>
     </main>
@@ -32,13 +32,13 @@ import { provideProfileState } from './state';
 export class ProfileComponent implements OnInit {
   readonly #usecase = inject(ProfileUsecase);
 
-  readonly links: Link[] = [
-    { label: 'GitHub', id: 'kudoas', url: `https://github.com/kudoas` },
-    { label: 'X (Twitter)', id: 'da1chi24', url: 'https://x.com/da1chi24' },
-    { label: 'Bluesky', id: 'da1chi', url: 'https://bsky.app/profile/da1chi.bsky.social' },
-    { label: 'Zenn', id: 'da1chi', url: 'https://zenn.dev/da1chi' },
-    { label: 'Hatena Blog', id: '/var/log/da1', url: 'https://da1chi.hatenablog.jp/' },
-    { label: 'Consence', id: '液溜まり', url: 'https://scrapbox.io/da1chi-tech/' },
+  readonly socialLinks: SocialLink[] = [
+    { label: 'GitHub', name: 'kudoas', url: `https://github.com/kudoas` },
+    { label: 'X (Twitter)', name: 'da1chi24', url: 'https://x.com/da1chi24' },
+    { label: 'Bluesky', name: 'da1chi', url: 'https://bsky.app/profile/da1chi.bsky.social' },
+    { label: 'Zenn', name: 'da1chi', url: 'https://zenn.dev/da1chi' },
+    { label: 'Hatena Blog', name: '/var/log/da1', url: 'https://da1chi.hatenablog.jp/' },
+    { label: 'Consence', name: '液溜まり', url: 'https://scrapbox.io/da1chi-tech/' },
   ];
 
   ngOnInit(): void {

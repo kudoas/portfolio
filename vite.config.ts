@@ -3,8 +3,6 @@
 import { defineConfig } from 'vite';
 import angular from '@analogjs/vite-plugin-angular';
 
-const isCI = !!process.env['CI'];
-
 export default defineConfig({
   plugins: [angular({ tsconfig: 'tsconfig.spec.json' })],
   test: {
@@ -14,7 +12,7 @@ export default defineConfig({
     browser: {
       name: 'chrome',
       enabled: true,
-      headless: isCI,
+      headless: true,
       provider: 'webdriverio', // https://github.com/vitest-dev/vitest/issues/6804
     },
   },
