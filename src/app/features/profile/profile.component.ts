@@ -2,14 +2,15 @@ import { Component, inject, OnInit } from '@angular/core';
 import { LinksComponent } from './links/links.component';
 import { SocialLink } from './types';
 import { ProfileUsecase, provideProfileUsecase } from './usecase';
-import { provideProfileState } from './state';
+import { ProfileState, provideProfileState } from './state';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @Component({
   selector: 'app-profile',
-  imports: [LinksComponent],
+  imports: [LinksComponent, TimelineComponent],
   template: `
     <main class="md:mx-40 font-mono">
-      <section>
+      <section class="mb-10">
         <h1 class="text-center mt-10 mb-5 font-bold text-3xl tracking-wide whitespace-nowrap">
           About Me
         </h1>
@@ -25,12 +26,19 @@ import { provideProfileState } from './state';
           <app-profile-links [links]="socialLinks" />
         </div>
       </section>
+      <section class="mb-10 mx-10">
+        <h1 class="text-center mt-10 mb-5 font-bold text-3xl tracking-wide whitespace-nowrap">
+          Blog
+        </h1>
+        <app-profile-timeline [timelines]="state.timeline()" />
+      </section>
     </main>
   `,
   providers: [provideProfileUsecase(), provideProfileState()],
 })
 export class ProfileComponent implements OnInit {
   readonly #usecase = inject(ProfileUsecase);
+  readonly state = inject(ProfileState);
 
   readonly socialLinks: SocialLink[] = [
     { label: 'GitHub', name: 'kudoas', url: `https://github.com/kudoas` },
@@ -41,7 +49,8 @@ export class ProfileComponent implements OnInit {
     { label: 'Consence', name: '液溜まり', url: 'https://scrapbox.io/da1chi-tech/' },
   ];
 
-  ngOnInit(): void {
-    this.#usecase.getArticles();
+  async ngOnInit() {
+    const articles = await this.#usecase.getArticles();
+    this.state.timeline.set(articles);
   }
 }
