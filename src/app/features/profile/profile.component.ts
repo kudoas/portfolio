@@ -10,7 +10,7 @@ import { TimelineComponent } from './timeline/timeline.component';
   imports: [LinksComponent, TimelineComponent],
   template: `
     <main class="md:mx-40 font-mono">
-      <section class="mb-10">
+      <section class="mb-10 block m-auto w-3/4">
         <h1 class="text-center mt-10 mb-5 font-bold text-3xl tracking-wide whitespace-nowrap">
           About Me
         </h1>
@@ -26,7 +26,7 @@ import { TimelineComponent } from './timeline/timeline.component';
           <app-profile-links [links]="socialLinks" />
         </div>
       </section>
-      <section class="mb-10 mx-10">
+      <section class="mb-10 block m-auto w-3/4">
         <h1 class="text-center mt-10 mb-2 font-bold text-3xl tracking-wide whitespace-nowrap">
           Blog
         </h1>
