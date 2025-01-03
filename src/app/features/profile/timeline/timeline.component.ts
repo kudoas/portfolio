@@ -12,7 +12,18 @@ import { Article } from '../types';
         <article class="mt-4">
           <h2 class="text-lg">
             <a class="font-bold" [href]="timeline.url">{{ timeline.title }}</a>
-            <span> - {{ timeline.publishedAt }}</span>
+            <!-- label -->
+            @switch (timeline.kind) {
+              @case ('zenn') {
+                <span class="ml-1 text-sm bg-[#3ea8ff] text-white px-1 rounded-md">Zenn</span>
+              }
+              @case ('hatena') {
+                <span class="ml-1 text-sm bg-[#c6da9e] text-white px-1 rounded-md">Hatena</span>
+              }
+            }
+            <span class="text-sm ml-1 bg-slate-300 rounded-md px-1">{{
+              timeline.publishedAt
+            }}</span>
           </h2>
         </article>
       }
@@ -24,11 +35,12 @@ export class TimelineComponent {
   readonly displayTimelines = computed(() =>
     this.timelines()
       .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime())
-      .map(({ id, title, url, publishedAt }) => ({
+      .map(({ id, title, url, publishedAt, kind }) => ({
         id,
         title,
         url,
         publishedAt: publishedAt.toLocaleDateString(),
+        kind,
       })),
   );
 }

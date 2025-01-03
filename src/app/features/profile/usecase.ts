@@ -39,6 +39,7 @@ export class ProfileUsecase {
         title,
         url: `https://zenn.dev${path}`,
         publishedAt: new Date(published_at!),
+        kind: 'zenn',
       }));
   }
 }
