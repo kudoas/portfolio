@@ -27,7 +27,7 @@ import { TimelineComponent } from './timeline/timeline.component';
         </div>
       </section>
       <section class="mb-10 mx-10">
-        <h1 class="text-center mt-10 mb-5 font-bold text-3xl tracking-wide whitespace-nowrap">
+        <h1 class="text-center mt-10 mb-2 font-bold text-3xl tracking-wide whitespace-nowrap">
           Blog
         </h1>
         <app-profile-timeline [timelines]="state.timeline()" />

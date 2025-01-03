@@ -9,4 +9,5 @@ export type Article = {
   title: string;
   url: string;
   publishedAt: Date;
+  kind: 'zenn' | 'hatena';
 };
