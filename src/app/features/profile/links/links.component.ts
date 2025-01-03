@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Link } from '../types';
+import { SocialLink } from '../types';
 
 @Component({
   selector: 'app-profile-links',
@@ -10,7 +10,7 @@ import { Link } from '../types';
         <dl class="mt-2 flex text-gray md:mx-0 md:mt-4">
           <dt class="w-40 text-lg font-bold">{{ link.label }}</dt>
           <dd>
-            <a [href]="link.url" class="cursor-pointer underline">{{ link.id }}</a>
+            <a [href]="link.url" class="cursor-pointer underline">{{ link.name }}</a>
           </dd>
         </dl>
       }
@@ -18,5 +18,5 @@ import { Link } from '../types';
   `,
 })
 export class LinksComponent {
-  links = input.required<Link[]>();
+  links = input.required<SocialLink[]>();
 }

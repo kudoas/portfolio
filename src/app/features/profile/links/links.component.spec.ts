@@ -5,7 +5,7 @@ describe('LinksComponent', () => {
   it('should create', async () => {
     await render(LinksComponent, {
       inputs: {
-        links: [{ label: 'GitHub', id: 'kudoas', url: `https://github.com/kudoas` }],
+        links: [{ label: 'GitHub', name: 'kudoas', url: `https://github.com/kudoas` }],
       },
     });
 

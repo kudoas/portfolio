@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { LinksComponent } from './links/links.component';
-import { Link } from './types';
+import { SocialLink } from './types';
+import { ProfileUsecase, provideProfileUsecase } from './usecase';
+import { ProfileState, provideProfileState } from './state';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @Component({
   selector: 'app-profile',
-  imports: [LinksComponent],
+  imports: [LinksComponent, TimelineComponent],
   template: `
     <main class="md:mx-40 font-mono">
-      <section>
+      <section class="mb-10">
         <h1 class="text-center mt-10 mb-5 font-bold text-3xl tracking-wide whitespace-nowrap">
           About Me
         </h1>
@@ -20,19 +23,34 @@ import { Link } from './types';
             />
             <p class="md:mb-0 mt-4 mb-1 text-lg font-bold text-center">da1chi<br />(Daichi Kudo)</p>
           </div>
-          <app-profile-links [links]="links" />
+          <app-profile-links [links]="socialLinks" />
         </div>
+      </section>
+      <section class="mb-10 mx-10">
+        <h1 class="text-center mt-10 mb-5 font-bold text-3xl tracking-wide whitespace-nowrap">
+          Blog
+        </h1>
+        <app-profile-timeline [timelines]="state.timeline()" />
       </section>
     </main>
   `,
+  providers: [provideProfileUsecase(), provideProfileState()],
 })
-export class ProfileComponent {
-  readonly links: Link[] = [
-    { label: 'GitHub', id: 'kudoas', url: `https://github.com/kudoas` },
-    { label: 'X (Twitter)', id: 'da1chi24', url: 'https://x.com/da1chi24' },
-    { label: 'Bluesky', id: 'da1chi', url: 'https://bsky.app/profile/da1chi.bsky.social' },
-    { label: 'Zenn', id: 'da1chi', url: 'https://zenn.dev/da1chi' },
-    { label: 'Hatena Blog', id: '/var/log/da1', url: 'https://da1chi.hatenablog.jp/' },
-    { label: 'Consence', id: '液溜まり', url: 'https://scrapbox.io/da1chi-tech/' },
+export class ProfileComponent implements OnInit {
+  readonly #usecase = inject(ProfileUsecase);
+  readonly state = inject(ProfileState);
+
+  readonly socialLinks: SocialLink[] = [
+    { label: 'GitHub', name: 'kudoas', url: `https://github.com/kudoas` },
+    { label: 'X (Twitter)', name: 'da1chi24', url: 'https://x.com/da1chi24' },
+    { label: 'Bluesky', name: 'da1chi', url: 'https://bsky.app/profile/da1chi.bsky.social' },
+    { label: 'Zenn', name: 'da1chi', url: 'https://zenn.dev/da1chi' },
+    { label: 'Hatena Blog', name: '/var/log/da1', url: 'https://da1chi.hatenablog.jp/' },
+    { label: 'Consence', name: '液溜まり', url: 'https://scrapbox.io/da1chi-tech/' },
   ];
+
+  async ngOnInit() {
+    const articles = await this.#usecase.getArticles();
+    this.state.timeline.set(articles);
+  }
 }
