@@ -9,6 +9,11 @@ export default defineConfig({
     globals: true,
     setupFiles: ['src/setup-vitest.ts'],
     include: ['src/**/*.spec.ts'],
+    coverage: {
+      provider: 'istanbul',
+      include: ['src/**/*.ts'],
+      exclude: ['src/main.ts'],
+    },
     browser: {
       name: 'chrome',
       enabled: true,

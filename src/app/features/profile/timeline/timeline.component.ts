@@ -11,19 +11,21 @@ import { Article } from '../types';
       @for (timeline of timelines; track timeline.id) {
         <article class="mt-4">
           <h2 class="text-lg">
-            <a class="font-bold" [href]="timeline.url">{{ timeline.title }}</a>
-            <!-- label -->
-            @switch (timeline.kind) {
-              @case ('zenn') {
-                <span class="ml-1 text-sm bg-[#3ea8ff] text-white px-1 rounded-md">Zenn</span>
+            <a class="font-bold" [href]="timeline.url">
+              <span>{{ timeline.title }}</span>
+              <!-- label -->
+              @switch (timeline.kind) {
+                @case ('zenn') {
+                  <span class="ml-1 text-sm bg-[#3ea8ff] text-white px-1 rounded-md">Zenn</span>
+                }
+                @case ('hatena') {
+                  <span class="ml-1 text-sm bg-[#c6da9e] text-white px-1 rounded-md">Hatena</span>
+                }
               }
-              @case ('hatena') {
-                <span class="ml-1 text-sm bg-[#c6da9e] text-white px-1 rounded-md">Hatena</span>
-              }
-            }
-            <span class="text-sm ml-1 bg-slate-300 rounded-md px-1">{{
-              timeline.publishedAt
-            }}</span>
+              <span class="ml-1 text-sm bg-slate-300 rounded-md px-1">{{
+                timeline.publishedAt
+              }}</span>
+            </a>
           </h2>
         </article>
       }
