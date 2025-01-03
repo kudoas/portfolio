@@ -1,22 +1,14 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { render } from '@testing-library/angular';
 import { TimelineComponent } from './timeline.component';
 
 describe('TimelineComponent', () => {
-  let component: TimelineComponent;
-  let fixture: ComponentFixture<TimelineComponent>;
+  it('should create', async () => {
+    await render(TimelineComponent, {
+      inputs: {
+        timelines: [{ id: 1, title: 'title', url: 'url', publishedAt: new Date() }],
+      },
+    });
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [TimelineComponent],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(TimelineComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(TimelineComponent).toBeTruthy();
   });
 });
