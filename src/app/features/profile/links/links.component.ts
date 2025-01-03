@@ -10,7 +10,7 @@ import { SocialLink } from '../types';
         <dl class="mt-2 flex text-gray md:mx-0 md:mt-4">
           <dt class="w-40 text-lg font-bold">{{ link.label }}</dt>
           <dd>
-            <a [href]="link.url" class="cursor-pointer underline">{{ link.name }}</a>
+            <a [href]="link.url" class="underline hover:text-gray-500">{{ link.name }}</a>
           </dd>
         </dl>
       }

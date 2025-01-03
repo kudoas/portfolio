@@ -33,6 +33,9 @@ import { TimelineComponent } from './timeline/timeline.component';
         <app-profile-timeline [timelines]="state.timeline()" />
       </section>
     </main>
+    <footer class="text-center text-gray-400 text-xs my-10">
+      <p>© 2025 Daichi Kudo</p>
+    </footer>
   `,
   providers: [provideProfileUsecase(), provideProfileState()],
 })

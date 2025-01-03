@@ -10,23 +10,21 @@ import { Article } from '../types';
     <div class="flex flex-col">
       @for (timeline of timelines; track timeline.id) {
         <article class="mt-4">
+          <div class="text-xs text-gray-400">{{ timeline.publishedAt }}</div>
           <h2 class="text-lg">
             <a class="font-bold" [href]="timeline.url">
-              <span>{{ timeline.title }}</span>
-              <!-- label -->
-              @switch (timeline.kind) {
-                @case ('zenn') {
-                  <span class="ml-1 text-sm bg-[#3ea8ff] text-white px-1 rounded-md">Zenn</span>
-                }
-                @case ('hatena') {
-                  <span class="ml-1 text-sm bg-[#c6da9e] text-white px-1 rounded-md">Hatena</span>
-                }
-              }
-              <span class="ml-1 text-sm bg-slate-300 rounded-md px-1">{{
-                timeline.publishedAt
-              }}</span>
+              <span class="underline hover:text-gray-500">{{ timeline.title }}</span>
             </a>
           </h2>
+          <!-- label -->
+          @switch (timeline.kind) {
+            @case ('zenn') {
+              <span class="text-sm bg-[#3ea8ff] text-white px-1 rounded-md">Zenn</span>
+            }
+            @case ('hatena') {
+              <span class="text-sm bg-[#c6da9e] text-white px-1 rounded-md">Hatena</span>
+            }
+          }
         </article>
       }
     </div>
