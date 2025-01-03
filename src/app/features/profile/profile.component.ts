@@ -34,7 +34,7 @@ import { TimelineComponent } from './timeline/timeline.component';
       </section>
     </main>
     <footer class="text-center text-gray-400 text-xs my-10">
-      <p>© 2025 Daichi Kudo</p>
+      <p>© 2022- Daichi Kudo</p>
     </footer>
   `,
   providers: [provideProfileUsecase(), provideProfileState()],
