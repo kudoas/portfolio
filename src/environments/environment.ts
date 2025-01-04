@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: '/api/zenn/articles?username=da1chi',
+  zennApiUrl: '/api/zenn/articles?username=da1chi',
 };

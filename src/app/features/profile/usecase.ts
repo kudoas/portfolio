@@ -28,14 +28,14 @@ export function provideProfileUsecase(instance?: ProfileUsecase): Provider[] {
 @Injectable()
 export class ProfileUsecase {
   readonly #httpClient = inject(HttpClient);
-  readonly #apiUrl = environment.apiUrl;
+  readonly #zennApiUrl = environment.zennApiUrl;
 
   async getArticles(): Promise<Article[]> {
-    const res = await lastValueFrom(this.#httpClient.get<ZennArticleResponse>(this.#apiUrl));
+    const res = await lastValueFrom(this.#httpClient.get<ZennArticleResponse>(this.#zennApiUrl));
     return res.articles
       .filter(({ published_at }) => published_at)
       .map(({ id, title, path, published_at }) => ({
-        id,
+        id: String(id),
         title,
         url: `https://zenn.dev${path}`,
         publishedAt: new Date(published_at!),
