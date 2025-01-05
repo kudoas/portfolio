@@ -7,7 +7,7 @@
     },
     {
       "source": "/api/hatena/:path*",
-      "destination": "https://blog.hatena.ne.jp/:path*"
+      "destination": "https://blog.hatena.ne.jp/da1chi24/da1chi.hatenablog.jp/atom/entry"
     }
   ],
   "headers": [
