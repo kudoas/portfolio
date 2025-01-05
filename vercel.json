@@ -7,7 +7,7 @@
     },
     {
       "source": "/api/hatena/:path*",
-      "destination": "https://blog.hatena.ne.jp/api/:path*"
+      "destination": "https://blog.hatena.ne.jp/:path*"
     }
   ],
   "headers": [
