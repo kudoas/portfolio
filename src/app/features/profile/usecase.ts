@@ -58,7 +58,7 @@ export class ProfileUsecase {
     const blogId = 'da1chi.hatenablog.jp';
     const apiKey = environment.hatenaApiKey;
     const res = await lastValueFrom(
-      this.#httpClient.get(`/api/hatena/${username}/${blogId}/atom/entry`, {
+      this.#httpClient.get(`https://blog.hatena.ne.jp/${username}/${blogId}/atom/entry`, {
         headers: {
           Authorization: `Basic ${btoa(`${username}:${apiKey}`)}`,
         },
