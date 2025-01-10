@@ -50,6 +50,6 @@
     "tailwindcss": "3.4.17",
     "typescript": "5.6.3",
     "vitest": "2.1.8",
-    "webdriverio": "9.5.2"
+    "webdriverio": "9.5.3"
   }
 }
