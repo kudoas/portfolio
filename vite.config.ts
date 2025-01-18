@@ -15,10 +15,14 @@ export default defineConfig({
       exclude: ['src/main.ts'],
     },
     browser: {
-      name: 'chrome',
+      instances: [
+        {
+          browser: 'chrome',
+        },
+      ],
+      provider: 'webdriverio', // https://github.com/vitest-dev/vitest/issues/6804
       enabled: true,
       headless: true,
-      provider: 'webdriverio', // https://github.com/vitest-dev/vitest/issues/6804
     },
   },
 });
