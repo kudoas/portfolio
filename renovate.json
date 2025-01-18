@@ -5,6 +5,12 @@
     ":pinDependencies",
     "github>lacolaco/renovate-config:ng-update"
   ],
-  "automerge": true,
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "automergeStrategy": "squash",
+      "updateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ]
 }
