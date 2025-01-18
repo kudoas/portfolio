@@ -9,7 +9,7 @@
   "packageRules": [
     {
       "automergeStrategy": "squash",
-      "updateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     }
   ]
