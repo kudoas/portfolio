@@ -57,6 +57,11 @@
   },
   "trustedDependencies": [
     "@parcel/watcher",
-    "edgedriver"
+    "edgedriver",
+    "esbuild",
+    "geckodriver",
+    "lmdb",
+    "msgpackr-extract",
+    "msw"
   ]
 }
