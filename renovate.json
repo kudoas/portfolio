@@ -3,7 +3,8 @@
   "extends": [
     "config:best-practices",
     ":pinDependencies",
-    "github>lacolaco/renovate-config:ng-update"
+    "github>lacolaco/renovate-config:ng-update",
+    ":dependencyDashboard"
   ],
   "rangeStrategy": "bump",
   "packageRules": [
