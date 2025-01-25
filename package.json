@@ -53,7 +53,7 @@
     "tailwindcss": "3.4.17",
     "typescript": "5.6.3",
     "vitest": "3.0.4",
-    "webdriverio": "9.6.4"
+    "webdriverio": "9.7.1"
   },
   "trustedDependencies": [
     "@parcel/watcher",
