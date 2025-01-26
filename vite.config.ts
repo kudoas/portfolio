@@ -8,6 +8,7 @@ export default defineConfig({
   test: {
     globals: true,
     setupFiles: ['src/setup-vitest.ts'],
+    globalSetup: 'src/ignore-vitest-warn.ts',
     include: ['src/**/*.spec.ts'],
     coverage: {
       provider: 'istanbul',
@@ -20,7 +21,7 @@ export default defineConfig({
           browser: 'chrome',
         },
       ],
-      provider: 'webdriverio', // https://github.com/vitest-dev/vitest/issues/6804
+      provider: 'webdriverio',
       enabled: true,
       headless: true,
     },
