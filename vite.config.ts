@@ -1,10 +1,11 @@
 /// <reference types="vitest" />
 
 import { defineConfig } from 'vite';
-import angular from '@analogjs/vite-plugin-angular';
+import { swcAngularUnpluginOptions } from '@jscutlery/swc-angular';
+import swc from 'unplugin-swc';
 
 export default defineConfig({
-  plugins: [angular({ tsconfig: 'tsconfig.spec.json' })],
+  plugins: [swc.vite(swcAngularUnpluginOptions())],
   test: {
     globals: true,
     setupFiles: ['src/setup-vitest.ts'],
