@@ -41,6 +41,7 @@
     "@eslint/eslintrc": "3.2.0",
     "@eslint/js": "9.19.0",
     "@jscutlery/swc-angular": "0.19.1",
+    "@tailwindcss/postcss": "4.0.1",
     "@testing-library/angular": "17.3.5",
     "@typescript-eslint/eslint-plugin": "8.22.0",
     "@typescript-eslint/parser": "8.22.0",
