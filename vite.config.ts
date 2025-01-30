@@ -21,6 +21,9 @@ export default defineConfig({
         {
           browser: 'chrome',
         },
+        {
+          browser: 'firefox',
+        },
       ],
       provider: 'webdriverio',
       enabled: true,
