@@ -49,7 +49,8 @@ export class ProfileComponent implements OnInit {
     { label: 'Bluesky', name: 'da1chi', url: 'https://bsky.app/profile/da1chi.bsky.social' },
     { label: 'Zenn', name: 'da1chi', url: 'https://zenn.dev/da1chi' },
     { label: 'Hatena Blog', name: '/var/log/da1', url: 'https://da1chi.hatenablog.jp/' },
-    { label: 'Consence', name: '液溜まり', url: 'https://scrapbox.io/da1chi-tech/' },
+    { label: 'Slide', name: '登壇資料', url: 'https://speakerdeck.com/kudoas' },
+    { label: 'Consence', name: '技術メモ', url: 'https://scrapbox.io/da1chi-tech/' },
   ];
 
   async ngOnInit() {
