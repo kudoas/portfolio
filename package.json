@@ -40,7 +40,7 @@
     "@angular/compiler-cli": "19.0.6",
     "@eslint/eslintrc": "3.2.0",
     "@eslint/js": "9.20.0",
-    "@jscutlery/swc-angular": "0.19.1",
+    "@jscutlery/swc-angular": "0.19.2",
     "@tailwindcss/postcss": "4.0.6",
     "@testing-library/angular": "17.3.5",
     "@typescript-eslint/eslint-plugin": "8.24.0",
