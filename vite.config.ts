@@ -24,6 +24,9 @@ export default defineConfig(({ mode }) => {
         prerender: {
           routes: [],
         },
+        nitro: {
+          preset: 'vercel'
+        }
       }),
       viteTsConfigPaths(),
       swc.vite(swcAngularUnpluginOptions())
