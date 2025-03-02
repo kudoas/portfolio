@@ -56,6 +56,6 @@ testem.log
 Thumbs.db
 .swc
 
-
+.vercel
 .nx/cache
 .nx/workspace-data
