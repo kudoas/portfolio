@@ -43,8 +43,7 @@
           "defaultConfiguration": "development",
           "options": {
             "buildTarget": "portfolio:build",
-            "port": 4200,
-            "proxyConfig": "proxy.conf.json"
+            "port": 4200
           },
           "configurations": {
             "development": {
