@@ -55,3 +55,7 @@ testem.log
 .DS_Store
 Thumbs.db
 .swc
+
+
+.nx/cache
+.nx/workspace-data
