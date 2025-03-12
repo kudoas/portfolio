@@ -46,7 +46,7 @@
         "typescript": "5.6.3",
         "unplugin-swc": "1.5.1",
         "vitest": "3.0.8",
-        "webdriverio": "9.11.0",
+        "webdriverio": "9.12.0",
       },
     },
   },
@@ -2126,7 +2126,7 @@
 
     "webdriver": ["webdriver@9.11.0", "", { "dependencies": { "@types/node": "^20.1.0", "@types/ws": "^8.5.3", "@wdio/config": "9.11.0", "@wdio/logger": "9.4.4", "@wdio/protocols": "9.7.0", "@wdio/types": "9.10.1", "@wdio/utils": "9.11.0", "deepmerge-ts": "^7.0.3", "undici": "^6.20.1", "ws": "^8.8.0" } }, "sha512-KQdI5sK+YwnUqol8MhvW9y6V+fhaW82KRhqMYnVCOrG4sJFWg7A9OIqR11Buco804HpzxyocRO6MnOQrNvP0vQ=="],
 
-    "webdriverio": ["webdriverio@9.11.0", "", { "dependencies": { "@types/node": "^20.11.30", "@types/sinonjs__fake-timers": "^8.1.5", "@wdio/config": "9.11.0", "@wdio/logger": "9.4.4", "@wdio/protocols": "9.7.0", "@wdio/repl": "9.4.4", "@wdio/types": "9.10.1", "@wdio/utils": "9.11.0", "archiver": "^7.0.1", "aria-query": "^5.3.0", "cheerio": "^1.0.0-rc.12", "css-shorthand-properties": "^1.1.1", "css-value": "^0.0.1", "grapheme-splitter": "^1.0.4", "htmlfy": "^0.6.0", "is-plain-obj": "^4.1.0", "jszip": "^3.10.1", "lodash.clonedeep": "^4.5.0", "lodash.zip": "^4.2.0", "query-selector-shadow-dom": "^1.0.1", "resq": "^1.11.0", "rgb2hex": "0.2.5", "serialize-error": "^11.0.3", "urlpattern-polyfill": "^10.0.0", "webdriver": "9.11.0" }, "peerDependencies": { "puppeteer-core": "^22.3.0" }, "optionalPeers": ["puppeteer-core"] }, "sha512-FYdq/3OJj04t4a+hooXt6GQ1L7i8BpZyB9BmKOW5iEKnG8vyyOE9nyOEj5SaAKU9dVJFrR8jBNdIALFDmABpRA=="],
+    "webdriverio": ["webdriverio@9.12.0", "", { "dependencies": { "@types/node": "^20.11.30", "@types/sinonjs__fake-timers": "^8.1.5", "@wdio/config": "9.11.0", "@wdio/logger": "9.4.4", "@wdio/protocols": "9.7.0", "@wdio/repl": "9.4.4", "@wdio/types": "9.10.1", "@wdio/utils": "9.11.0", "archiver": "^7.0.1", "aria-query": "^5.3.0", "cheerio": "^1.0.0-rc.12", "css-shorthand-properties": "^1.1.1", "css-value": "^0.0.1", "grapheme-splitter": "^1.0.4", "htmlfy": "^0.6.0", "is-plain-obj": "^4.1.0", "jszip": "^3.10.1", "lodash.clonedeep": "^4.5.0", "lodash.zip": "^4.2.0", "query-selector-shadow-dom": "^1.0.1", "resq": "^1.11.0", "rgb2hex": "0.2.5", "serialize-error": "^11.0.3", "urlpattern-polyfill": "^10.0.0", "webdriver": "9.11.0" }, "peerDependencies": { "puppeteer-core": "^22.3.0" }, "optionalPeers": ["puppeteer-core"] }, "sha512-QQ+HFL1POqQwOeyb3cpu+PfJw73JXGzqKUH/tMTK9+pG3Dd3AfeXJIKJw0RJBPjEgv/D2Di8u/wk41Yf5Dce6g=="],
 
     "webpack": ["webpack@5.96.1", "", { "dependencies": { "@types/eslint-scope": "^3.7.7", "@types/estree": "^1.0.6", "@webassemblyjs/ast": "^1.12.1", "@webassemblyjs/wasm-edit": "^1.12.1", "@webassemblyjs/wasm-parser": "^1.12.1", "acorn": "^8.14.0", "browserslist": "^4.24.0", "chrome-trace-event": "^1.0.2", "enhanced-resolve": "^5.17.1", "es-module-lexer": "^1.2.1", "eslint-scope": "5.1.1", "events": "^3.2.0", "glob-to-regexp": "^0.4.1", "graceful-fs": "^4.2.11", "json-parse-even-better-errors": "^2.3.1", "loader-runner": "^4.2.0", "mime-types": "^2.1.27", "neo-async": "^2.6.2", "schema-utils": "^3.2.0", "tapable": "^2.1.1", "terser-webpack-plugin": "^5.3.10", "watchpack": "^2.4.1", "webpack-sources": "^3.2.3" }, "bin": { "webpack": "bin/webpack.js" } }, "sha512-l2LlBSvVZGhL4ZrPwyr8+37AunkcYj5qh8o6u2/2rzoPc8gxFJkLj1WxNgooi9pnoc06jh0BjuXnamM4qlujZA=="],
 
