@@ -16,7 +16,7 @@
         "@angular/platform-browser-dynamic": "19.0.6",
         "@angular/router": "19.0.6",
         "marked": "5.1.2",
-        "marked-gfm-heading-id": "3.2.0",
+        "marked-gfm-heading-id": "4.1.1",
         "marked-highlight": "2.2.1",
         "marked-mangle": "1.1.10",
         "prismjs": "1.30.0",
@@ -2047,7 +2047,7 @@
 
     "marked": ["marked@5.1.2", "", { "bin": { "marked": "bin/marked.js" } }, "sha512-ahRPGXJpjMjwSOlBoTMZAK7ATXkli5qCPxZ21TG44rx1KEo44bii4ekgTDQPNRQ4Kh7JMb9Ub1PVk1NxRSsorg=="],
 
-    "marked-gfm-heading-id": ["marked-gfm-heading-id@3.2.0", "", { "dependencies": { "github-slugger": "^2.0.0" }, "peerDependencies": { "marked": ">=4 <13" } }, "sha512-Xfxpr5lXLDLY10XqzSCA9l2dDaiabQUgtYM9hw8yunyVsB/xYBRpiic6BOiY/EAJw1ik1eWr1ET1HKOAPZBhXg=="],
+    "marked-gfm-heading-id": ["marked-gfm-heading-id@4.1.1", "", { "dependencies": { "github-slugger": "^2.0.0" }, "peerDependencies": { "marked": ">=13 <16" } }, "sha512-EeQZieAQmsI6c2tWLx0ETd0VjPwLV8qi+HT0dIsfVMERm0rCIuXfRvZXJbo1SgUi++lmuR1LVY+QzgNiLNvVpw=="],
 
     "marked-highlight": ["marked-highlight@2.2.1", "", { "peerDependencies": { "marked": ">=4 <16" } }, "sha512-SiCIeEiQbs9TxGwle9/OwbOejHCZsohQRaNTY2u8euEXYt2rYUFoiImUirThU3Gd/o6Q1gHGtH9qloHlbJpNIA=="],
 
