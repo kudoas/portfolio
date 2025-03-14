@@ -39,7 +39,6 @@ export default defineConfig(({ mode }) => {
     test: {
       globals: true,
       setupFiles: ['src/setup-vitest.ts'],
-      globalSetup: 'src/global-setup.ts',
       include: ['src/**/*.spec.ts'],
       coverage: {
         provider: 'istanbul',
