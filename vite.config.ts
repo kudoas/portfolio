@@ -9,7 +9,6 @@ export default defineConfig({
   test: {
     globals: true,
     setupFiles: ['src/setup-vitest.ts'],
-    globalSetup: 'src/global-setup.ts',
     include: ['src/**/*.spec.ts'],
     coverage: {
       provider: 'istanbul',
