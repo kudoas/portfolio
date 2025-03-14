@@ -55,7 +55,7 @@
         "typescript": "5.6.3",
         "unplugin-swc": "1.5.1",
         "vite": "6.2.2",
-        "vite-tsconfig-paths": "4.3.2",
+        "vite-tsconfig-paths": "5.1.4",
         "vitest": "3.0.8",
         "webdriverio": "9.12.0",
       },
@@ -2889,7 +2889,7 @@
 
     "vite-node": ["vite-node@3.0.8", "", { "dependencies": { "cac": "^6.7.14", "debug": "^4.4.0", "es-module-lexer": "^1.6.0", "pathe": "^2.0.3", "vite": "^5.0.0 || ^6.0.0" }, "bin": { "vite-node": "vite-node.mjs" } }, "sha512-6PhR4H9VGlcwXZ+KWCdMqbtG649xCPZqfI9j2PsK1FcXgEzro5bGHcVKFCTqPLaNKZES8Evqv4LwvZARsq5qlg=="],
 
-    "vite-tsconfig-paths": ["vite-tsconfig-paths@4.3.2", "", { "dependencies": { "debug": "^4.1.1", "globrex": "^0.1.2", "tsconfck": "^3.0.3" }, "peerDependencies": { "vite": "*" }, "optionalPeers": ["vite"] }, "sha512-0Vd/a6po6Q+86rPlntHye7F31zA2URZMbH8M3saAZ/xR9QoGN/L21bxEGfXdWmFdNkqPpRdxFT7nmNe12e9/uA=="],
+    "vite-tsconfig-paths": ["vite-tsconfig-paths@5.1.4", "", { "dependencies": { "debug": "^4.1.1", "globrex": "^0.1.2", "tsconfck": "^3.0.3" }, "peerDependencies": { "vite": "*" }, "optionalPeers": ["vite"] }, "sha512-cYj0LRuLV2c2sMqhqhGpaO3LretdtMn/BVX4cPLanIZuwwrkVl+lK84E/miEXkCHWXuq65rhNN4rXsBcOB3S4w=="],
 
     "vitefu": ["vitefu@0.2.5", "", { "peerDependencies": { "vite": "^3.0.0 || ^4.0.0 || ^5.0.0" }, "optionalPeers": ["vite"] }, "sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q=="],
 
