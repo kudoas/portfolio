@@ -5,18 +5,6 @@ import swc from 'unplugin-swc';
 import { swcAngularUnpluginOptions } from '@jscutlery/swc-angular';
 import analog from '@analogjs/platform';
 
-<<<<<<< HEAD
-export default defineConfig({
-  plugins: [swc.vite(swcAngularUnpluginOptions())],
-  test: {
-    globals: true,
-    setupFiles: ['src/setup-vitest.ts'],
-    include: ['src/**/*.spec.ts'],
-    coverage: {
-      provider: 'istanbul',
-      include: ['src/**/*.ts'],
-      exclude: ['src/main.ts'],
-=======
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
@@ -28,7 +16,6 @@ export default defineConfig(({ mode }) => {
       outDir: './dist/./client',
       reportCompressedSize: true,
       target: ['es2020'],
->>>>>>> 5d28753 (chore: migrate project to Analog.js with Vite)
     },
     plugins: [
       analog({
