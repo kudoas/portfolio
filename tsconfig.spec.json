@@ -4,7 +4,8 @@
     "composite": true,
     "strict": true,
     "outDir": "./out-tsc/spec",
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals", "node"],
+    "target": "es2016"
   },
   "files": ["src/setup-vitest.ts"],
   "include": ["src/**/*.spec.ts", "src/**/*.d.ts", "src/**/*.ts"]
