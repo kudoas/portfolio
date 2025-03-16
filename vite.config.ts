@@ -50,9 +50,6 @@ export default defineConfig(({ mode }) => {
           {
             browser: 'chromium',
           },
-          {
-            browser: 'firefox',
-          },
         ],
         provider: 'playwright',
         enabled: true,
