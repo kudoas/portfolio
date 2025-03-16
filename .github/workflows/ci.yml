@@ -14,4 +14,5 @@ jobs:
       - run: bun run lint
       - run: bun run format:check
       - run: bun run build
+      - run: bunx playwright install chromium firefox
       - run: bun run test

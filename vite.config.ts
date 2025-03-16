@@ -48,10 +48,13 @@ export default defineConfig(({ mode }) => {
       browser: {
         instances: [
           {
-            browser: 'chrome',
+            browser: 'chromium',
+          },
+          {
+            browser: 'firefox',
           },
         ],
-        provider: 'webdriverio',
+        provider: 'playwright',
         enabled: true,
         headless: true,
       },
