@@ -53,7 +53,7 @@
         "vite": "6.2.5",
         "vite-tsconfig-paths": "5.1.4",
         "vitest": "3.1.1",
-        "webdriverio": "9.12.3",
+        "webdriverio": "9.12.4",
       },
     },
   },
@@ -2866,9 +2866,9 @@
 
     "web-streams-polyfill": ["web-streams-polyfill@3.3.3", "", {}, "sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw=="],
 
-    "webdriver": ["webdriver@9.12.3", "", { "dependencies": { "@types/node": "^20.1.0", "@types/ws": "^8.5.3", "@wdio/config": "9.12.3", "@wdio/logger": "9.4.4", "@wdio/protocols": "9.12.3", "@wdio/types": "9.12.3", "@wdio/utils": "9.12.3", "deepmerge-ts": "^7.0.3", "undici": "^6.20.1", "ws": "^8.8.0" } }, "sha512-s3OXyjqOu78H0wN+8wdsvPNcs0xoKyziCt35I6sff9yzEdHwAqGxrQ79jKQqFcfDF0qukFIJ8QduTSpsEStLVw=="],
+    "webdriver": ["webdriver@9.12.4", "", { "dependencies": { "@types/node": "^20.1.0", "@types/ws": "^8.5.3", "@wdio/config": "9.12.3", "@wdio/logger": "9.4.4", "@wdio/protocols": "9.12.3", "@wdio/types": "9.12.3", "@wdio/utils": "9.12.3", "deepmerge-ts": "^7.0.3", "undici": "^6.20.1", "ws": "^8.8.0" } }, "sha512-oGFjtmLxyE3WSMb6DshJkDQPNyYqFmXyepOBbG9rOBhVgIFjmur8eS56wgAPZT0fVcmFKRbY+7xcIlxS/dEr7g=="],
 
-    "webdriverio": ["webdriverio@9.12.3", "", { "dependencies": { "@types/node": "^20.11.30", "@types/sinonjs__fake-timers": "^8.1.5", "@wdio/config": "9.12.3", "@wdio/logger": "9.4.4", "@wdio/protocols": "9.12.3", "@wdio/repl": "9.4.4", "@wdio/types": "9.12.3", "@wdio/utils": "9.12.3", "archiver": "^7.0.1", "aria-query": "^5.3.0", "cheerio": "^1.0.0-rc.12", "css-shorthand-properties": "^1.1.1", "css-value": "^0.0.1", "grapheme-splitter": "^1.0.4", "htmlfy": "^0.6.0", "is-plain-obj": "^4.1.0", "jszip": "^3.10.1", "lodash.clonedeep": "^4.5.0", "lodash.zip": "^4.2.0", "query-selector-shadow-dom": "^1.0.1", "resq": "^1.11.0", "rgb2hex": "0.2.5", "serialize-error": "^11.0.3", "urlpattern-polyfill": "^10.0.0", "webdriver": "9.12.3" }, "peerDependencies": { "puppeteer-core": "^22.3.0" }, "optionalPeers": ["puppeteer-core"] }, "sha512-wdN6y/oZc/dAZY4dVT1Ku9nYtGUXH7SrQNZbWrmajyqZpySFAQ3HXLldkYtLgeoPNIuBIdoq3LstKDwQ0vEulQ=="],
+    "webdriverio": ["webdriverio@9.12.4", "", { "dependencies": { "@types/node": "^20.11.30", "@types/sinonjs__fake-timers": "^8.1.5", "@wdio/config": "9.12.3", "@wdio/logger": "9.4.4", "@wdio/protocols": "9.12.3", "@wdio/repl": "9.4.4", "@wdio/types": "9.12.3", "@wdio/utils": "9.12.3", "archiver": "^7.0.1", "aria-query": "^5.3.0", "cheerio": "^1.0.0-rc.12", "css-shorthand-properties": "^1.1.1", "css-value": "^0.0.1", "grapheme-splitter": "^1.0.4", "htmlfy": "^0.6.0", "is-plain-obj": "^4.1.0", "jszip": "^3.10.1", "lodash.clonedeep": "^4.5.0", "lodash.zip": "^4.2.0", "query-selector-shadow-dom": "^1.0.1", "resq": "^1.11.0", "rgb2hex": "0.2.5", "serialize-error": "^11.0.3", "urlpattern-polyfill": "^10.0.0", "webdriver": "9.12.4" }, "peerDependencies": { "puppeteer-core": "^22.3.0" }, "optionalPeers": ["puppeteer-core"] }, "sha512-to2VLGmlm5OR4cMAwZ5uYTLUl/av/9XkIiRrY1FxEfCwI0+rWPHfE/xsHs7xtHMjQpEaaGKovrjCMoQ5W2WSOg=="],
 
     "webidl-conversions": ["webidl-conversions@3.0.1", "", {}, "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ=="],
 
