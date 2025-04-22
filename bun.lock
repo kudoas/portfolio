@@ -49,7 +49,7 @@
         "prettier": "3.5.3",
         "tailwindcss": "4.0.15",
         "typescript": "5.6.3",
-        "unplugin-swc": "1.5.1",
+        "unplugin-swc": "1.5.2",
         "vite": "6.3.2",
         "vite-tsconfig-paths": "5.1.4",
         "vitest": "3.1.2",
@@ -2796,7 +2796,7 @@
 
     "unplugin": ["unplugin@1.16.1", "", { "dependencies": { "acorn": "^8.14.0", "webpack-virtual-modules": "^0.6.2" } }, "sha512-4/u/j4FrCKdi17jaxuJA0jClGxB1AvU2hw/IuayPc4ay1XGaJs/rbb4v5WKwAjNifjmXK9PIFyuPiaK8azyR9w=="],
 
-    "unplugin-swc": ["unplugin-swc@1.5.1", "", { "dependencies": { "@rollup/pluginutils": "^5.1.0", "load-tsconfig": "^0.2.5", "unplugin": "^1.11.0" }, "peerDependencies": { "@swc/core": "^1.2.108" } }, "sha512-/ZLrPNjChhGx3Z95pxJ4tQgfI6rWqukgYHKflrNB4zAV1izOQuDhkTn55JWeivpBxDCoK7M/TStb2aS/14PS/g=="],
+    "unplugin-swc": ["unplugin-swc@1.5.2", "", { "dependencies": { "@rollup/pluginutils": "^5.1.0", "load-tsconfig": "^0.2.5", "unplugin": "^1.11.0" }, "peerDependencies": { "@swc/core": "^1.2.108" } }, "sha512-bf8DJO8lD1wpnwFglQpVH2XEaFfVsSU5C7yFyLwGT1gxskPtejlDeuttKxjtmHTSqrDsQrK0FCFdhw3Ny+K7hA=="],
 
     "unplugin-utils": ["unplugin-utils@0.2.4", "", { "dependencies": { "pathe": "^2.0.2", "picomatch": "^4.0.2" } }, "sha512-8U/MtpkPkkk3Atewj1+RcKIjb5WBimZ/WSLhhR3w6SsIj8XJuKTacSP8g+2JhfSGw0Cb125Y+2zA/IzJZDVbhA=="],
 
