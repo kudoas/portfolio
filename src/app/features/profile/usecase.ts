@@ -4,6 +4,7 @@ import { lastValueFrom } from 'rxjs';
 
 import { environment } from '../../../environments/environment.development';
 import { Article } from './types';
+import { ArticleCacheService } from './article-cache.service';
 
 export type ZennArticleResponse = {
   articles: ZennArticle[];
@@ -29,13 +30,47 @@ export function provideProfileUsecase(instance?: ProfileUsecase): Provider[] {
 export class ProfileUsecase {
   readonly #httpClient = inject(HttpClient);
   readonly #apiUrl = environment.apiUrl;
+  readonly #articleCacheService = inject(ArticleCacheService);
 
   async getArticles(): Promise<Article[]> {
-    const [hatena, zenn] = await Promise.all([
-      this.#fetchHatenaArticles(),
-      this.#fetchZennArticles(),
-    ]);
-    return [...hatena, ...zenn];
+    // Cache-First, then Network
+    const cachedData = await this.#articleCacheService.getCache();
+
+    if (cachedData && cachedData.expiry > Date.now()) {
+      return cachedData.articles;
+    } else if (cachedData) {
+      this.#fetchAndCacheArticles().catch(console.error);
+      return cachedData.articles;
+    } else {
+      return this.#fetchAndCacheArticles();
+    }
+  }
+
+  async #fetchAndCacheArticles(): Promise<Article[]> {
+    try {
+      const [hatena, zenn] = await Promise.all([
+        this.#fetchHatenaArticles(),
+        this.#fetchZennArticles(),
+      ]);
+
+      const combinedArticles = [...hatena, ...zenn].sort(
+        (a, b) => b.publishedAt.getTime() - a.publishedAt.getTime(),
+      );
+
+      this.#articleCacheService.setCache(combinedArticles).catch(console.error);
+
+      return combinedArticles;
+    } catch (error) {
+      console.error('Error fetching articles from network:', error);
+      const fallbackCache = await this.#articleCacheService.getCache();
+      if (fallbackCache) {
+        console.log('Network fetch failed, using any cache as fallback.');
+        return fallbackCache.articles;
+      } else {
+        console.log('Network fetch failed and no cache available. Returning empty array.');
+        return [];
+      }
+    }
   }
 
   async #fetchZennArticles() {
