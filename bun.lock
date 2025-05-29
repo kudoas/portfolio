@@ -33,7 +33,7 @@
         "@angular/compiler-cli": "19.0.6",
         "@eslint/eslintrc": "3.3.1",
         "@eslint/js": "9.27.0",
-        "@jscutlery/swc-angular": "0.20.3",
+        "@jscutlery/swc-angular": "0.20.4",
         "@nx/vite": "20.7.2",
         "@tailwindcss/postcss": "4.1.8",
         "@testing-library/angular": "17.3.7",
@@ -466,7 +466,7 @@
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.25", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ=="],
 
-    "@jscutlery/swc-angular": ["@jscutlery/swc-angular@0.20.3", "", { "peerDependencies": { "@jscutlery/swc-angular-plugin": ">=0.11.0 <1.0.0", "@swc/core": "~1.10.0" } }, "sha512-71A/MdyRDtKeHw+H04oHp7xrMUqBzMLkFRWfGb//gMWnscXacUz7GlufnESO8+BaVgpB+VhOm8PdlTQogfgV3g=="],
+    "@jscutlery/swc-angular": ["@jscutlery/swc-angular@0.20.4", "", { "peerDependencies": { "@jscutlery/swc-angular-plugin": ">=0.11.0 <1.0.0", "@swc/core": "~1.10.0" } }, "sha512-qNKM5eenDYvU0FTIRhSXB4f5TbbR1F+ryxuA27XHv9ql7f0xVinllvTaMyNxXpYbWNHZbI5XxPZELNF7nH8Wig=="],
 
     "@jscutlery/swc-angular-plugin": ["@jscutlery/swc-angular-plugin@0.19.4", "", {}, "sha512-YFmWAU16+mMkH1QNSbHQXbibr/8aZYfKUWnWcuFLFBUCLvfxCQJzzLLEKyGnKs4+u/2HbvruqLob4Pvj8OrdsQ=="],
 
