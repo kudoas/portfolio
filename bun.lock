@@ -49,7 +49,7 @@
         "prettier": "3.6.2",
         "tailwindcss": "4.1.12",
         "typescript": "5.6.3",
-        "unplugin-swc": "1.5.6",
+        "unplugin-swc": "1.5.7",
         "vite": "6.3.5",
         "vite-tsconfig-paths": "5.1.4",
         "vitest": "3.2.4",
@@ -2812,9 +2812,9 @@
 
     "unpipe": ["unpipe@1.0.0", "", {}, "sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ=="],
 
-    "unplugin": ["unplugin@2.3.6", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "acorn": "^8.15.0", "picomatch": "^4.0.3", "webpack-virtual-modules": "^0.6.2" } }, "sha512-+/MdXl8bLTXI2lJF22gUBeCFqZruEpL/oM9f8wxCuKh9+Mw9qeul3gTqgbKpMeOFlusCzc0s7x2Kax2xKW+FQg=="],
+    "unplugin": ["unplugin@2.3.8", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "acorn": "^8.15.0", "picomatch": "^4.0.3", "webpack-virtual-modules": "^0.6.2" } }, "sha512-lkaSIlxceytPyt9yfb1h7L9jDFqwMqvUZeGsKB7Z8QrvAO3xZv2S+xMQQYzxk0AGJHcQhbcvhKEstrMy99jnuQ=="],
 
-    "unplugin-swc": ["unplugin-swc@1.5.6", "", { "dependencies": { "@rollup/pluginutils": "^5.2.0", "load-tsconfig": "^0.2.5", "unplugin": "^2.3.6" }, "peerDependencies": { "@swc/core": "^1.2.108" } }, "sha512-nrxHoLfPLeb5zlbt1fKtVIRk9SJ5KhK9CtNGDRgKb/cbmb7tJq9bSR7Z3vKjpvF/UDpM+hdFwMd09Fksy4c+Gg=="],
+    "unplugin-swc": ["unplugin-swc@1.5.7", "", { "dependencies": { "@rollup/pluginutils": "^5.2.0", "load-tsconfig": "^0.2.5", "unplugin": "^2.3.8" }, "peerDependencies": { "@swc/core": "^1.2.108" } }, "sha512-Ng4uuLAodZToA0kQk3+oY8b0C/Q9oV0ohRMixH2nqWMhCF/wNuMYZXZznYpwRLmF7wC36TFIOywBAxCLOReoeg=="],
 
     "unplugin-utils": ["unplugin-utils@0.2.4", "", { "dependencies": { "pathe": "^2.0.2", "picomatch": "^4.0.2" } }, "sha512-8U/MtpkPkkk3Atewj1+RcKIjb5WBimZ/WSLhhR3w6SsIj8XJuKTacSP8g+2JhfSGw0Cb125Y+2zA/IzJZDVbhA=="],
 
