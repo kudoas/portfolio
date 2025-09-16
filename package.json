@@ -47,7 +47,7 @@
     "@jscutlery/swc-angular": "0.20.5",
     "@nx/vite": "20.7.2",
     "@tailwindcss/postcss": "4.1.13",
-    "@testing-library/angular": "17.4.0",
+    "@testing-library/angular": "18.0.0",
     "@typescript-eslint/eslint-plugin": "8.44.0",
     "@typescript-eslint/parser": "8.44.0",
     "@vitest/browser": "3.2.4",
