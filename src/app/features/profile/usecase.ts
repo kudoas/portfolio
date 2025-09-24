@@ -117,6 +117,13 @@ export class ProfileUsecase {
         publishedAt: new Date('2024-04-26'),
         kind: 'hatena',
       },
+      {
+        id: 10004,
+        title: 'Kaigi on Rails 2025 に「Web Componentsで実現する Hotwire とフロントエンドフレームワークの橋渡し」というタイトルで登壇します',
+        url: 'https://tech.classi.jp/entry/2025/09/12/180000',
+        publishedAt: new Date('2025-09-12'),
+        kind: 'hatena',
+      }
     ];
 
     return Promise.resolve(articles);
