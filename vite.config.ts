@@ -1,14 +1,14 @@
 /// <reference types="vitest" />
 
 import { defineConfig } from 'vite';
-import swc from 'unplugin-swc';
-import { swcAngularUnpluginOptions } from '@jscutlery/swc-angular';
 import analog from '@analogjs/platform';
 
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
+  const isTest = mode === 'test';
+  const enableBrowserTesting = process.env.VITEST_BROWSER === 'true';
   return {
     root: __dirname,
     cacheDir: './node_modules/.vite',
@@ -18,19 +18,19 @@ export default defineConfig(({ mode }) => {
       target: ['es2020'],
     },
     plugins: [
-      analog({
-        ssr: false,
-        static: false,
-        prerender: {
-          routes: [],
-        },
-        nitro: {
-          preset: 'vercel'
-        }
-      }),
-      viteTsConfigPaths(),
-      swc.vite(swcAngularUnpluginOptions())
-    ],
+      !isTest &&
+        analog({
+          ssr: false,
+          static: false,
+          prerender: {
+            routes: [],
+          },
+          nitro: {
+            preset: 'vercel'
+          }
+        }),
+      viteTsConfigPaths()
+    ].filter(Boolean),
     server: {
       fs: {
         allow: ['.'],
@@ -40,6 +40,7 @@ export default defineConfig(({ mode }) => {
       globals: true,
       setupFiles: ['src/setup-vitest.ts'],
       include: ['src/**/*.spec.ts'],
+      environment: 'jsdom',
       coverage: {
         provider: 'istanbul',
         include: ['src/**/*.ts'],
@@ -49,10 +50,11 @@ export default defineConfig(({ mode }) => {
         instances: [
           {
             browser: 'chromium',
+            setupFiles: ['src/setup-vitest.ts'],
           },
         ],
         provider: 'playwright',
-        enabled: true,
+        enabled: enableBrowserTesting,
         headless: true,
       },
     },
