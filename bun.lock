@@ -50,7 +50,7 @@
         "prettier": "3.6.2",
         "tailwindcss": "4.1.13",
         "typescript": "5.6.3",
-        "unplugin-swc": "1.5.7",
+        "unplugin-swc": "1.5.8",
         "vite": "6.4.1",
         "vite-tsconfig-paths": "5.1.4",
         "vitest": "3.2.4",
@@ -723,7 +723,7 @@
 
     "@rollup/plugin-terser": ["@rollup/plugin-terser@0.4.4", "", { "dependencies": { "serialize-javascript": "^6.0.1", "smob": "^1.0.0", "terser": "^5.17.4" }, "peerDependencies": { "rollup": "^2.0.0||^3.0.0||^4.0.0" }, "optionalPeers": ["rollup"] }, "sha512-XHeJC5Bgvs8LfukDwWZp7yeqin6ns8RTl2B9avbejt6tZqsqvVoWI7ZTQrcNsfKEDWBTnTxM8nMDkO2IFFbd0A=="],
 
-    "@rollup/pluginutils": ["@rollup/pluginutils@5.2.0", "", { "dependencies": { "@types/estree": "^1.0.0", "estree-walker": "^2.0.2", "picomatch": "^4.0.2" }, "peerDependencies": { "rollup": "^1.20.0||^2.0.0||^3.0.0||^4.0.0" }, "optionalPeers": ["rollup"] }, "sha512-qWJ2ZTbmumwiLFomfzTyt5Kng4hwPi9rwCYN4SHb6eaRU1KNO4ccxINHr/VhH4GgPlt1XfSTLX2LBTme8ne4Zw=="],
+    "@rollup/pluginutils": ["@rollup/pluginutils@5.3.0", "", { "dependencies": { "@types/estree": "^1.0.0", "estree-walker": "^2.0.2", "picomatch": "^4.0.2" }, "peerDependencies": { "rollup": "^1.20.0||^2.0.0||^3.0.0||^4.0.0" }, "optionalPeers": ["rollup"] }, "sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q=="],
 
     "@rollup/rollup-android-arm-eabi": ["@rollup/rollup-android-arm-eabi@4.35.0", "", { "os": "android", "cpu": "arm" }, "sha512-uYQ2WfPaqz5QtVgMxfN6NpLD+no0MYHDBywl7itPYd3K5TjjSghNKmX8ic9S8NU8w81NVhJv/XojcHptRly7qQ=="],
 
@@ -2815,9 +2815,9 @@
 
     "unpipe": ["unpipe@1.0.0", "", {}, "sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ=="],
 
-    "unplugin": ["unplugin@2.3.8", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "acorn": "^8.15.0", "picomatch": "^4.0.3", "webpack-virtual-modules": "^0.6.2" } }, "sha512-lkaSIlxceytPyt9yfb1h7L9jDFqwMqvUZeGsKB7Z8QrvAO3xZv2S+xMQQYzxk0AGJHcQhbcvhKEstrMy99jnuQ=="],
+    "unplugin": ["unplugin@2.3.10", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "acorn": "^8.15.0", "picomatch": "^4.0.3", "webpack-virtual-modules": "^0.6.2" } }, "sha512-6NCPkv1ClwH+/BGE9QeoTIl09nuiAt0gS28nn1PvYXsGKRwM2TCbFA2QiilmehPDTXIe684k4rZI1yl3A1PCUw=="],
 
-    "unplugin-swc": ["unplugin-swc@1.5.7", "", { "dependencies": { "@rollup/pluginutils": "^5.2.0", "load-tsconfig": "^0.2.5", "unplugin": "^2.3.8" }, "peerDependencies": { "@swc/core": "^1.2.108" } }, "sha512-Ng4uuLAodZToA0kQk3+oY8b0C/Q9oV0ohRMixH2nqWMhCF/wNuMYZXZznYpwRLmF7wC36TFIOywBAxCLOReoeg=="],
+    "unplugin-swc": ["unplugin-swc@1.5.8", "", { "dependencies": { "@rollup/pluginutils": "^5.3.0", "load-tsconfig": "^0.2.5", "unplugin": "^2.3.10" }, "peerDependencies": { "@swc/core": "^1.2.108" } }, "sha512-6qVAQsCn/AMFiw7XGXkNC/q/Or4OpL0zRPertzLT1BoigjOQp0ktPxDWY4lc51FGwVbzW4V1BURaal1rpbJwSg=="],
 
     "unplugin-utils": ["unplugin-utils@0.2.4", "", { "dependencies": { "pathe": "^2.0.2", "picomatch": "^4.0.2" } }, "sha512-8U/MtpkPkkk3Atewj1+RcKIjb5WBimZ/WSLhhR3w6SsIj8XJuKTacSP8g+2JhfSGw0Cb125Y+2zA/IzJZDVbhA=="],
 
@@ -3258,6 +3258,8 @@
     "@rollup/plugin-replace/@rollup/pluginutils": ["@rollup/pluginutils@5.1.4", "", { "dependencies": { "@types/estree": "^1.0.0", "estree-walker": "^2.0.2", "picomatch": "^4.0.2" }, "peerDependencies": { "rollup": "^1.20.0||^2.0.0||^3.0.0||^4.0.0" }, "optionalPeers": ["rollup"] }, "sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ=="],
 
     "@rollup/pluginutils/estree-walker": ["estree-walker@2.0.2", "", {}, "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w=="],
+
+    "@rollup/pluginutils/picomatch": ["picomatch@4.0.3", "", {}, "sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q=="],
 
     "@rspack/core/caniuse-lite": ["caniuse-lite@1.0.30001704", "", {}, "sha512-+L2IgBbV6gXB4ETf0keSvLr7JUrRVbIaB/lrQ1+z8mRcQiisG5k+lG6O4n6Y5q6f5EuNfaYXKgymucphlEXQew=="],
 
