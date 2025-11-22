@@ -24,14 +24,14 @@ import { TimelineComponent } from './timeline/timeline.component';
             />
             <p class="md:mb-0 mt-4 mb-1 text-lg font-bold text-center">da1chi<br />(Daichi Kudo)</p>
           </div>
-          <app-profile-links [links]="socialLinks" />
+          <app-profile-links [linksInput]="socialLinks" />
         </div>
       </section>
       <section class="mb-10 block m-auto w-3/4">
         <h1 class="text-center mt-10 mb-2 font-bold text-3xl tracking-wide whitespace-nowrap">
           Blog
         </h1>
-        <app-profile-timeline [timelines]="state.timeline()" />
+        <app-profile-timeline [timelinesInput]="state.timeline()" />
       </section>
     </main>
     <footer class="text-center text-gray-400 text-xs my-10">

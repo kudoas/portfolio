@@ -35,7 +35,7 @@ export class TimelineComponent {
   readonly #timelines = signal<Article[]>([]);
   readonly timelines = this.#timelines.asReadonly();
 
-  @Input({ required: true, alias: 'timelines' })
+  @Input({ required: true })
   set timelinesInput(value: Article[]) {
     this.#timelines.set(value);
   }

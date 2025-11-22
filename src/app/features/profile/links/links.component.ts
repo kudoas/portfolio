@@ -22,7 +22,7 @@ export class LinksComponent {
   readonly #links = signal<SocialLink[]>([]);
   readonly links = this.#links.asReadonly();
 
-  @Input({ required: true, alias: 'links' })
+  @Input({ required: true })
   set linksInput(value: SocialLink[]) {
     this.#links.set(value);
   }
