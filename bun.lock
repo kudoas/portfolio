@@ -33,7 +33,7 @@
         "@eslint/js": "9.39.1",
         "@nx/vite": "20.7.2",
         "@tailwindcss/postcss": "4.1.17",
-        "@testing-library/angular": "17.4.0",
+        "@testing-library/angular": "18.1.1",
         "@typescript-eslint/eslint-plugin": "8.47.0",
         "@typescript-eslint/parser": "8.47.0",
         "@vitest/browser": "3.2.4",
@@ -819,7 +819,7 @@
 
     "@tailwindcss/postcss": ["@tailwindcss/postcss@4.1.17", "", { "dependencies": { "@alloc/quick-lru": "^5.2.0", "@tailwindcss/node": "4.1.17", "@tailwindcss/oxide": "4.1.17", "postcss": "^8.4.41", "tailwindcss": "4.1.17" } }, "sha512-+nKl9N9mN5uJ+M7dBOOCzINw94MPstNR/GtIhz1fpZysxL/4a+No64jCBD6CPN+bIHWFx3KWuu8XJRrj/572Dw=="],
 
-    "@testing-library/angular": ["@testing-library/angular@17.4.0", "", { "dependencies": { "tslib": "^2.3.1" }, "peerDependencies": { "@angular/animations": ">= 17.0.0", "@angular/common": ">= 17.0.0", "@angular/core": ">= 17.0.0", "@angular/platform-browser": ">= 17.0.0", "@angular/router": ">= 17.0.0", "@testing-library/dom": "^10.0.0" } }, "sha512-xxh2tllgvpPD7lF8k2v7CGN4S5gj5zwaMA4kkM8lAZFbDj2vdW6zdVN0CxXZJy219JlztR+py2BM0KepuCKyLw=="],
+    "@testing-library/angular": ["@testing-library/angular@18.1.1", "", { "dependencies": { "tslib": "^2.3.1" }, "peerDependencies": { "@angular/common": ">= 20.0.0", "@angular/core": ">= 20.0.0", "@angular/platform-browser": ">= 20.0.0", "@angular/router": ">= 20.0.0", "@testing-library/dom": "^10.0.0" } }, "sha512-LbA+W+VeOf7TC7/ZfHLiOLlLyD2cVG3mBdkJapviC2Fd4Bw/Utcaso4bh+5B0cx/fyKyuPgS+L6FnaKGdP9HBA=="],
 
     "@testing-library/dom": ["@testing-library/dom@10.4.1", "", { "dependencies": { "@babel/code-frame": "^7.10.4", "@babel/runtime": "^7.12.5", "@types/aria-query": "^5.0.1", "aria-query": "5.3.0", "dom-accessibility-api": "^0.5.9", "lz-string": "^1.5.0", "picocolors": "1.1.1", "pretty-format": "^27.0.2" } }, "sha512-o4PXJQidqJl82ckFaXUeoAW+XysPLauYI43Abki5hABd853iMhitooc6znOnczgbTYmEP6U6/y1ZyKAIsvMKGg=="],
 
