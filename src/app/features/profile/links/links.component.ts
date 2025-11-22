@@ -1,8 +1,9 @@
-import { Component, input } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 import { SocialLink } from '../types';
 
 @Component({
   selector: 'app-profile-links',
+  standalone: true,
   imports: [],
   template: `
     <div class="flex flex-col md:ml-20">
@@ -18,5 +19,11 @@ import { SocialLink } from '../types';
   `,
 })
 export class LinksComponent {
-  links = input.required<SocialLink[]>();
+  readonly #links = signal<SocialLink[]>([]);
+  readonly links = this.#links.asReadonly();
+
+  @Input({ required: true, alias: 'links' })
+  set linksInput(value: SocialLink[]) {
+    this.#links.set(value);
+  }
 }

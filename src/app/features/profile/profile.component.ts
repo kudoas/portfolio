@@ -7,6 +7,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 
 @Component({
   selector: 'app-profile',
+  standalone: true,
   imports: [LinksComponent, TimelineComponent],
   template: `
     <main class="md:mx-40 font-mono">

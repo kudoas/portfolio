@@ -1,10 +1,7 @@
-// Patch vitest APIs with Zone
-import '@analogjs/vitest-angular/setup-zone';
+import '@angular/compiler';
+import '@analogjs/vitest-angular/setup-snapshots';
+import { setupTestBed } from '@analogjs/vitest-angular/setup-testbed';
 
-import { getTestBed } from '@angular/core/testing';
-import {
-  BrowserDynamicTestingModule,
-  platformBrowserDynamicTesting,
-} from '@angular/platform-browser-dynamic/testing';
-
-getTestBed().initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
+setupTestBed({
+  zoneless: true,
+});

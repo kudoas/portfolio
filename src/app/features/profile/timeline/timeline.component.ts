@@ -1,9 +1,10 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, Input, computed, signal } from '@angular/core';
 
 import { Article } from '../types';
 
 @Component({
   selector: 'app-profile-timeline',
+  standalone: true,
   imports: [],
   template: `
     @let timelines = displayTimelines();
@@ -31,7 +32,14 @@ import { Article } from '../types';
   `,
 })
 export class TimelineComponent {
-  readonly timelines = input.required<Article[]>();
+  readonly #timelines = signal<Article[]>([]);
+  readonly timelines = this.#timelines.asReadonly();
+
+  @Input({ required: true, alias: 'timelines' })
+  set timelinesInput(value: Article[]) {
+    this.#timelines.set(value);
+  }
+
   readonly displayTimelines = computed(() =>
     this.timelines()
       .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime())
