@@ -46,8 +46,9 @@
     "@testing-library/angular": "18.1.1",
     "@typescript-eslint/eslint-plugin": "8.47.0",
     "@typescript-eslint/parser": "8.47.0",
-    "@vitest/browser": "3.2.4",
-    "@vitest/coverage-istanbul": "3.2.4",
+    "@vitest/browser": "4.0.13",
+    "@vitest/browser-playwright": "^4.0.13",
+    "@vitest/coverage-istanbul": "4.0.13",
     "autoprefixer": "10.4.22",
     "eslint": "9.39.1",
     "husky": "9.1.7",
@@ -59,7 +60,7 @@
     "typescript": "5.9.3",
     "vite": "7.2.4",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.2.4",
+    "vitest": "4.0.13",
     "webdriverio": "9.20.1"
   },
   "trustedDependencies": [

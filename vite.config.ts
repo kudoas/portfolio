@@ -2,6 +2,7 @@
 
 import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';
+import { playwright } from '@vitest/browser-playwright';
 
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 
@@ -26,10 +27,10 @@ export default defineConfig(({ mode }) => {
             routes: [],
           },
           nitro: {
-            preset: 'vercel'
-          }
+            preset: 'vercel',
+          },
         }),
-      viteTsConfigPaths()
+      viteTsConfigPaths(),
     ].filter(Boolean),
     server: {
       fs: {
@@ -53,7 +54,7 @@ export default defineConfig(({ mode }) => {
             setupFiles: ['src/setup-vitest.ts'],
           },
         ],
-        provider: 'playwright',
+        provider: playwright,
         enabled: enableBrowserTesting,
         headless: true,
       },
