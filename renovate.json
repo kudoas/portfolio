@@ -6,7 +6,7 @@
     "github>lacolaco/renovate-config:ng-update",
     ":dependencyDashboard"
   ],
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "1 days",
   "prHourlyLimit": 5,
   "prConcurrentLimit": 10,
   "rangeStrategy": "bump",
