@@ -1,2 +1,2 @@
 [install]
-minimumReleaseAge = 86400 # 1 days ago
+minimumReleaseAge = 43200 # 12 hours in seconds
