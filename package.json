@@ -41,7 +41,7 @@
     "@angular/compiler-cli": "21.0.8",
     "@eslint/eslintrc": "3.3.3",
     "@eslint/js": "9.39.2",
-    "@nx/vite": "22.4.0",
+    "@nx/vite": "22.4.1",
     "@tailwindcss/postcss": "4.1.18",
     "@testing-library/angular": "19.0.0",
     "@typescript-eslint/eslint-plugin": "8.53.1",
