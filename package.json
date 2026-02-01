@@ -28,9 +28,9 @@
     "tslib": "2.8.1"
   },
   "devDependencies": {
-    "@analogjs/platform": "2.2.2",
-    "@analogjs/vite-plugin-angular": "2.2.2",
-    "@analogjs/vitest-angular": "2.2.2",
+    "@analogjs/platform": "2.2.3",
+    "@analogjs/vite-plugin-angular": "2.2.3",
+    "@analogjs/vitest-angular": "2.2.3",
     "@angular-eslint/builder": "21.2.0",
     "@angular-eslint/eslint-plugin": "21.2.0",
     "@angular-eslint/eslint-plugin-template": "21.2.0",
