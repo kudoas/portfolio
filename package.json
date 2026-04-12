@@ -58,7 +58,7 @@
     "prettier": "3.8.1",
     "tailwindcss": "4.2.2",
     "typescript": "5.9.3",
-    "vite": "7.3.2",
+    "vite": "8.0.8",
     "vite-tsconfig-paths": "6.1.1",
     "vitest": "4.1.4",
     "webdriverio": "9.27.0"
