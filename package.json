@@ -61,7 +61,7 @@
     "vite": "7.3.5",
     "vite-tsconfig-paths": "6.1.1",
     "vitest": "4.1.8",
-    "webdriverio": "9.27.2"
+    "webdriverio": "9.28.0"
   },
   "trustedDependencies": [
     "@parcel/watcher",
