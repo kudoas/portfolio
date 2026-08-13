@@ -43,7 +43,7 @@
     "@eslint/js": "9.39.5",
     "@nx/vite": "22.7.8",
     "@tailwindcss/postcss": "4.3.3",
-    "@testing-library/angular": "19.4.1",
+    "@testing-library/angular": "19.4.2",
     "@typescript-eslint/eslint-plugin": "8.67.0",
     "@typescript-eslint/parser": "8.67.0",
     "@vitest/browser": "4.1.10",
