@@ -52,7 +52,7 @@
     "autoprefixer": "10.6.2",
     "eslint": "9.39.5",
     "husky": "9.1.7",
-    "jsdom": "28.1.0",
+    "jsdom": "31.0.0",
     "playwright": "1.65.0",
     "postcss": "8.5.32",
     "prettier": "3.9.10",
